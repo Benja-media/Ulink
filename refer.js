@@ -11,4 +11,4 @@
       xmlhttp.send();
 
 
-  window.location.href = "https://insta.benja.ml"
+  window.location.href = "https://github.com/Benjamin-del/instalink"
