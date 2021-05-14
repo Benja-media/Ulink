@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Instalink</title>
-    
-    <link rel="shortcut icon" href="/logo.png" />
+   <!-- <title>Instalink: @template</title> -->
+
+    <link
+      rel="shortcut icon"
+      href="https://cdn.glitch.com/35409746-8e4a-406e-ac47-16c4db92cad8%2Fecf15831-4979-4324-b498-eb0d0c706cd9.image.png?v=1619791646369"
+    />
 
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
-    
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-    <style>
-      body {
-        background: rgb(131,58,180);
-        background: linear-gradient(225deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-      }
-    </style>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/animation.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/image.css" />
   </head>
-  
   <body>
+    <h1><strong>INSTA</strong>LINK</h1>
+    <p style="font-size:11px">
+      By <a href="https://www.instagram.com/benmmonster/">@benmmonster</a>
+    </p>
+    <div class="center">
+      <!-- Please keep above! You are required to atruibute the authour (me)-->
+      <div>
+        <a onclick="user()"><h1 id="user" class="center"></h1></a>
+      </div>
+    </div>
+    <!-- End of header -->
 
-<h2>InstaLink</h2>
-<p style="font-size:11px">By <a href="https://www.instagram.com/benmmonster/">@benmmonster</a></p>
-    
-<p>InstaLink! A new Instagram Bio link
-Self host InstaLink for free!
-Or try hosting by InstaLink for free!</p>
-  
-    
-<a style="display:block" href="https://github.com/Benjamin-del/instalink/">
-  <div class="link"><p>Get started with InstaLink</p></div>
-</a>
-    
-<img src="https://cdn.glitch.com/85712162-9e45-49e9-81dc-601e01c976ad%2FInstalink%20(1).png?v=1614893720275" alt="Phone featuring InstaLink" class="img">
+    <a onclick="click1()"><p id="Link1" class="link"></p></a>
+    <a onclick="click2()"><p id="Link2" class="link"></p></a>
+    <a onclick="click3()"><p id="Link3" class="link"></p></a>
+    <a onclick="click4()"><p id="Link4" class="link"></p></a>
+  <!--  <a onclick="click5()"><p id="Link5" class="gradient-text"></p></a> -->
+
+<script src="script.js"></script>
+    <script src="title.js"></script>
 
     
-</body>
+<!-- Insert extra's here -->
+<!--<script src="extras/5.js"></script> -->
+
+    
+    <br>
+    <p class="Atrubution">&#45;</p>
+    <br>
+    <a onclick ="Atrubution()"><p id="Atrubution" class="Atrubution"></p></a>
+
+  </body>
 </html>
