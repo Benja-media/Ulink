@@ -1,6 +1,6 @@
 {
-  "user": "benmmonster",
-  "user_url": "benmmonster",
+  "user": "instagramer",
+  "user_url": "instagramer",
   "media": "https://instagram.com",
   "symbol": "@",
   "media_name": "Instagram",
@@ -8,17 +8,17 @@
   "msg": "You are being teleported to",
 
   "title1": "Link1",
-  "link1": "https://google.com",
+  "link1": "https://example.com",
 
   "title2": "Link2",
-  "link2": "https://google.com",
+  "link2": "https://example.com",
 
   "title3": "Link3",
-  "link3": "https://google.com",
+  "link3": "https://example.com",
 
   "title4": "Link4",
-  "link4": "https://google.com",
+  "link4": "https://example.com",
 
   "title5": "Link5",
-  "link5": "https://google.com"
+  "link5": "https://example.com"
 }
