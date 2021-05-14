@@ -29,6 +29,7 @@ Change to `link.js` `Yes - Prebuilt`
 Change to `Index.html` `Yes - Prebuilt`
 
 
+# Want to make a Extra add on?
 
-
+Create a pull request with the finished add on. I will look over it and publish it to the community!
 
