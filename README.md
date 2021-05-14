@@ -89,13 +89,13 @@ For more info please see [EXTRAS.md](../master/EXTRAS.md)
 
 # Extras
 
-You may notice a folder called extras. This is where all the extra parts will go. (EX: Themes, 5th link, 6th link etc...) I will release extra's eventualy. All new versions of instalink come with 5.js (Dissabled). 
+Extras are the equivalent versions to plugins. Any one can create Extra's and share it with the community! For more info please see [EXTRAS.md](../master/EXTRAS.md)
 
 # Final note
 
 Please ***Do not change `title.js`, `refer.js` OR `refer.html`.*** These files add the required atribution. 
 
-I hope this is easy to understand. If you need more help create an issue in github and I will look in to it. 
+I hope this is easy to understand. If you need more help create an issue, Or ask it in the discussions in github and I will look in to it! 
 
 
 
