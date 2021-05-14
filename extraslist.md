@@ -10,7 +10,7 @@ License: `GPL-3.0 License`
 
 Filename: `info.js`
 
-Change to `link.js` `No`
+Change to `link.json` `No`
 
 Change to `Index.html` `Yes`
 
@@ -24,7 +24,7 @@ License: `N/A`
 
 Filename: `5.js`
 
-Change to `link.js` `Yes - Prebuilt`
+Change to `link.json` `Yes - Prebuilt`
 
 Change to `Index.html` `Yes - Prebuilt`
 
