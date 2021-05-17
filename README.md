@@ -10,13 +10,13 @@ Send-away messages that are short mesages that your guests will see when they cl
 
 Fist you will need to deploy Instalink to a host. Here are some quick start buttons:
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Benjamin-del/instalink)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Benja-media/instalink)
 
-[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/benjamin-del/instalink)
+[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/benja-media/instalink)
 
 Glitch handles files different. You will have a .html ending of your page if you do not use index!
 
-[![forks - instalink](https://img.shields.io/github/forks/benjamin-del/instalink?style=social)](https://github.com/benjamin-del/instalink)
+[![forks - instalink](https://img.shields.io/github/forks/benjamin-del/instalink?style=social)](https://github.com/benja-media/instalink)
 
 # Adding your links
 
