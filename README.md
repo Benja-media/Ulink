@@ -14,6 +14,8 @@ Fist you will need to deploy Instalink to a host. Here are some quick start butt
 
 [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/benjamin-del/instalink)
 
+Glitch handles files different. You will have a .html ending of your page if you do not use index!
+
 [![forks - instalink](https://img.shields.io/github/forks/benjamin-del/instalink?style=social)](https://github.com/benjamin-del/instalink)
 
 # Adding your links
