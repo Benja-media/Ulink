@@ -16,7 +16,7 @@ Fist you will need to deploy Instalink to a host. Here are some quick start butt
 
 Glitch handles files different. You will have a .html ending of your page if you do not use index!
 
-[![forks - instalink](https://img.shields.io/github/forks/benjamin-del/instalink?style=social)](https://github.com/benja-media/instalink)
+[![forks - instalink](https://img.shields.io/github/forks/benja-media/instalink?style=social)](https://github.com/benja-media/instalink)
 
 # Adding your links
 
