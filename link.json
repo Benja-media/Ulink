@@ -1,24 +1,24 @@
 {
-  "user": "instagramer",
-  "user_url": "instagramer",
+  "user": "benmmonster",
+  "user_url": "benmmonster",
   "media": "https://instagram.com",
   "symbol": "@",
   "media_name": "Instagram",
 
   "msg": "You are being teleported to",
 
-  "title1": "Link1",
-  "link1": "https://example.com",
+  "title1": "Youtube channel",
+  "link1": "https://www.youtube.com/channel/UC8g9QqWZYtgfKvuzs22TNqw",
 
-  "title2": "Link2",
-  "link2": "https://example.com",
+  "title2": "Flickr",
+  "link2": "https://www.flickr.com/people/benmmonster/",
 
-  "title3": "Link3",
-  "link3": "https://example.com",
+  "title3": "My blog",
+  "link3": "https://benjblog.ml",
 
-  "title4": "Link4",
-  "link4": "https://example.com",
+  "title4": "Get started with InstaLink",
+  "link4": "https://insta.benja.ml/refer.html",
 
   "title5": "Link5",
-  "link5": "https://example.com"
+  "link5": "https://google.com"
 }

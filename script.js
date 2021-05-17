@@ -20,9 +20,7 @@ function Atrubution() {
   window.location.href = "refer.html"
 }
     
-/*DO NOT CHANGE ABOVE*/  
-
-
+/*DO NOT CHANGE ABOVE*/
 
 var xmlhttp = new XMLHttpRequest();
       xmlhttp.onreadystatechange = function() {
