@@ -28,8 +28,8 @@ Here is an example config.json file
 
 ```
 {
-  "user": "benmmonster",
-  "user_url": "benmmonster",
+  "user": "Instagarmer",
+  "user_url": "Instagarmer",
   "media": "https://instagram.com",
   "symbol": "@",
   "media_name": "Instagram",
