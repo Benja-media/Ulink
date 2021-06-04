@@ -6,7 +6,7 @@
 
         }
       };
-      xmlhttp.open("GET", "link.json", true);
+      xmlhttp.open("GET", "/config.json", true);
       xmlhttp.send();
 
       function click5() {
