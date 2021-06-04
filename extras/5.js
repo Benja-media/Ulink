@@ -20,7 +20,7 @@
             window.location.href = Link.link5;
           }
         };
-        xmlhttp.open("GET", "link.json", true);
+        xmlhttp.open("GET", "/config.json", true);
         xmlhttp.send();
       }
 

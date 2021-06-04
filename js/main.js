@@ -1,26 +1,9 @@
-        window.onload = title();
-
-
-function title() {
-  
-var xmlhttp = new XMLHttpRequest();
-      xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-          var Link = JSON.parse(this.responseText);
-          document.title = Link.symbol + Link.user + " | Instalink";
-          document.getElementById("Atrubution").innerHTML =   "This page was created by " + Link.user + "! "+ Link.user + " used InstaLink to create this page Click here to get yours now!" ;
-
-        }
-      };
-      xmlhttp.open("GET", "link.json", true);
-      xmlhttp.send();
-}
-
 function Atrubution() {
-  window.location.href = "refer.html"
+  window.location.href = "https://github.com/benja-media/instalink/"
 }
-    
-/*DO NOT CHANGE ABOVE*/
+
+
+/*DO NOT CHANGE ABOVE!!!!!!!*/
 
 var xmlhttp = new XMLHttpRequest();
       xmlhttp.onreadystatechange = function() {
@@ -31,11 +14,16 @@ var xmlhttp = new XMLHttpRequest();
           document.getElementById("Link3").innerHTML = Link.title3;
           document.getElementById("Link4").innerHTML = Link.title4;
           document.getElementById("user").innerHTML = Link.symbol + Link.user;
+          document.getElementById("name").innerHTML = Link.name;
+
+
+
+
 
 
         }
       };
-      xmlhttp.open("GET", "link.json", true);
+      xmlhttp.open("GET", "/config.json", true);
       xmlhttp.send();
 
       function click1() {
@@ -49,7 +37,7 @@ var xmlhttp = new XMLHttpRequest();
             window.location.href = Link.link1;
           }
         };
-        xmlhttp.open("GET", "link.json", true);
+        xmlhttp.open("GET", "/config.json", true);
         xmlhttp.send();
       }
 
@@ -64,7 +52,7 @@ var xmlhttp = new XMLHttpRequest();
             console.log = Link.msg + "&nbsp;" + Link.link;
           }
         };
-        xmlhttp.open("GET", "link.json", true);
+        xmlhttp.open("GET", "/config.json", true);
         xmlhttp.send();
       }
 
@@ -79,7 +67,7 @@ var xmlhttp = new XMLHttpRequest();
             console.log = Link.msg + "&nbsp;" + Link.link3;
           }
         };
-        xmlhttp.open("GET", "link.json", true);
+        xmlhttp.open("GET", "/config.json", true);
         xmlhttp.send();
       }
 
@@ -94,7 +82,7 @@ var xmlhttp = new XMLHttpRequest();
             console.log = Link.msg + "&nbsp;" + Link.link4;
           }
         };
-        xmlhttp.open("GET", "link.json", true);
+        xmlhttp.open("GET", "/config.json", true);
         xmlhttp.send();
       }
 
@@ -124,6 +112,10 @@ var xmlhttp = new XMLHttpRequest();
             window.location.href = Link.media + "/" + Link.user_url;
           }
         };
-        xmlhttp.open("GET", "link.json", true);
+        xmlhttp.open("GET", "/config.json", true);
         xmlhttp.send();
       }
+
+
+
+

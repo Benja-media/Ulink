@@ -8,29 +8,14 @@ h1 {
   text-align: center !important;
 }
 p {
-  text-align: center;
+  text-align: center !important;
 }
 h3 {
-  text-align: center;
+  text-align: center !important;
 }
 
-.img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
 
-/*body {
-  color:  rgb(131, 58, 180);
-  background: linear-gradient(
-    225deg,
-    rgba(131, 58, 180, 1) 0%,
-    rgba(253, 29, 29, 1) 50%,
-    rgba(252, 176, 69, 1) 100%
-  );
-  font-family: "Open Sans", sans-serif;
-}*/
+
 
 a:link {
   color: black;
@@ -63,6 +48,10 @@ a:active {
 
 
 
-
 .Atrubution {  font-size: 11px;
 }
+
+.bio {  font-size: 12px;
+}
+
+

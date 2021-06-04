@@ -4,53 +4,49 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>InstaLink engine is starting</title>
 
-   <!-- <title>Instalink: @template</title> -->
-
-    <link
-      rel="shortcut icon"
-      href="/styles/logo.png"
-    />
-
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/animation.css" />
-    <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/image.css" />
-  </head>
-  <body>
-    <h1><strong>INSTA</strong>LINK</h1>
-    <p style="font-size:11px">
-      By <a href="https://www.instagram.com/benmmonster/">@benmmonster</a>
-    </p>
-    <div class="center">
-      <!-- Please keep above! You are required to atruibute the authour (me)-->
-      <div>
-        <a onclick="user()"><h1 id="user" class="center"></h1></a>
-      </div>
-    </div>
-    <!-- End of header -->
-
-    <a onclick="click1()"><p id="Link1" class="link"></p></a>
-    <a onclick="click2()"><p id="Link2" class="link"></p></a>
-    <a onclick="click3()"><p id="Link3" class="link"></p></a>
-    <a onclick="click4()"><p id="Link4" class="link"></p></a>
-  <!--  <a onclick="click5()"><p id="Link5" class="gradient-text"></p></a> -->
-
-<script src="script.js"></script>
-    <script src="title.js"></script>
-        <script src="extras/info.js"></script>
-
-
-    
-<!-- Insert extra's here -->
-<!--<script src="extras/5.js"></script> -->
-
-    
-    <br>
-    <p class="Atrubution">&#45;</p>
-    <br>
-    <a onclick ="Atrubution()"><p id="Atrubution" class="Atrubution"></p></a>
+<head>
   
+<body>
+<script>
+var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+    if (mobile) {
+        
+      
+      var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            var mobile = JSON.parse(this.responseText);
+            window.location.href = mobile.mobile_home;
+          }
+        };
+        xmlhttp.open("GET", "/config.json", true);
+        xmlhttp.send();
+      }
+      
+      
+      
+     else {
+     
+       
+var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            var desk = JSON.parse(this.responseText);
+            window.location.href = desk.desk_home;
+          }
+        };
+        xmlhttp.open("GET", "/config.json", true);
+        xmlhttp.send();
+      }
+    
+  
+    
+    
+    </script>
+
+    
+
   </body>
 </html>
