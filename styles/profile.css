@@ -1,0 +1,10 @@
+.profile {
+  
+  flex-wrap: wrap;
+  border-radius: 50%;
+}
+
+img { border-radius: 50%;
+}
+
+.name {font-size:13px !important;}

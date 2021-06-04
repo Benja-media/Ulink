@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Instalink!</title>
+
+    <link rel="shortcut icon" href="/styles/logo.png" />
+    <!-- The in app browser does not reconize favions at the time -->
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/animation.css" />
+    <link rel="stylesheet" href="/styles/profile.css" />
+  </head>
+  <body onload="title()">
+    <h1><strong>INSTA</strong>LINK</h1>
+    <p style="font-size: 11px">
+      By <a href="https://www.instagram.com/benmmonster/">@benmmonster</a>
+    </p>
+    <div class="center">
+      <!-- Please keep above! You are required to atruibute the authour (me)-->
+    </div>
+    <div>
+      <a onclick="user()"><h1 id="user" class="center"></h1></a>
+      <div id="img" style="border-radius: 25px;"></div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- Profile photo -->
+
+    <!-- Bio -->
+    <div id="full_bio">
+      <p id="bio" class="bio"></p>
+      <p class="bio">-</p>
+    </div>
+    <!-- End of header -->
+
+    <!-- Links -->
+    <a onclick="click1()"><p id="Link1" class="link"></p></a>
+    <a onclick="click2()"><p id="Link2" class="link"></p></a>
+    <a onclick="click3()"><p id="Link3" class="link"></p></a>
+    <a onclick="click4()"><p id="Link4" class="link"></p></a>
+    <!--  <a onclick="click5()"><p id="Link5" class="gradient-text"></p></a> -->
+    <!-- Scripts -->
+    <script src="/js/main.js"></script>
+    <script src="/js/photo/desk.js"></script>
+    <script src="/js/bio.js"></script>
+
+    <br />
+
+    <!-- Insert extra's here -->
+    <!--<script src="extras/5.js"></script> -->
+
+    <br />
+    <p class="Atrubution">&#45;</p>
+    <br />
+    <a onclick="Atrubution()"><p id="Atrubution" class="Atrubution"></p></a>
+
+    <!--<div id="img" class ="img"></div>-->
+  </body>
+</html>
