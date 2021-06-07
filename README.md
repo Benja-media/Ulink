@@ -14,7 +14,7 @@ Fist you will need to deploy Instalink to a host. Here are some quick start butt
 
 [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/benja-media/instalink)
 
-Or just click "use this template button" to use on github!!
+Glitch handles files different. You will have a .html ending of your page if you do not use index!
 
 [![forks - instalink](https://img.shields.io/github/forks/benja-media/instalink?style=social)](https://github.com/benja-media/instalink/forks)
 
@@ -28,8 +28,8 @@ Here is an example config.json file
 
 ```
 {
-  "user": "Instagarmer",
-  "user_url": "Instagarmer",
+  "user": "benmmonster",
+  "user_url": "benmmonster",
   "media": "https://instagram.com",
   "symbol": "@",
   "media_name": "Instagram",
@@ -111,10 +111,10 @@ When a guest clicks on a link before they are redirected they will see `msg` + `
 
 # Add a 5th link.
 
-Instalink has come with support for five links but it is turned off by default. To turn it on uncomment line 38 **_AND_** 45. This will show "Link 5"
+Instalink has come with support for five links but it is turned off by default. To turn it on uncomment line `9` **_AND_** `54`  On `/a` **_AND_** `/@` This will show "Link 5"
 
 # Extras
 
-You may notice a folder called extras. This is where all the extra parts will go. (EX: Themes, 5th link, 6th link etc...) I will release extra's eventualy. All new versions of instalink come with 5.js (Dissabled).
+You may notice a folder called extras. This is where all the extra parts will go. (EX: Themes, 5th link, Push notifications etc...) I will release extra's eventualy. All versions of instalink come with 5.js (Dissabled).
 
 I hope this is easy to understand. If you need more help create an issue in github and I will look in to it. Please see [Extras](../blob/master/extras/READEME.md)
