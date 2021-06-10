@@ -16,8 +16,7 @@ var xmlhttp = new XMLHttpRequest();
           document.getElementById("Link5").innerHTML = Link.title5;
           document.getElementById("Link6").innerHTML = Link.title5;
           document.getElementById("Link7").innerHTML = Link.title7;
-
-
+          // End of Links
           document.getElementById("user").innerHTML = Link.symbol + Link.user;
           document.getElementById("name").innerHTML = Link.name;
 
