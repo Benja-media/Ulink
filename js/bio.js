@@ -18,7 +18,7 @@ function title() {
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       var Link = JSON.parse(this.responseText);
-      document.title = Link.symbol + Link.user + " | Instalink";
+      document.title = Link.symbol + Link.user + " | Ulink";
       document.getElementById("Atrubution").innerHTML =
         "This page was created by " +
         Link.user +
