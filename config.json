@@ -4,7 +4,7 @@
   "media": "https://instagram.com",
   "symbol": "@",
   "media_name": "Instagram",
-  "name": "Ben M",
+  "name": "Instagrammer",
   "photo": "https://cdn.glitch.com/35409746-8e4a-406e-ac47-16c4db92cad8%2F10x100profile.jpeg",
   "img_top": "150",
   "img_margin": "0",
@@ -12,11 +12,11 @@
 
   "msg": "You are being teleported to",
 
-  "title1": "",
-  "link1": "",
+  "title1": "Link 1",
+  "link1": "/link.html",
 
-  "title2": "",
-  "link2": "",
+  "title2": "Link 2",
+  "link2": "/link.html",
 
   "title3": "",
   "link3": "",
