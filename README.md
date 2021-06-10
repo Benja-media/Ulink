@@ -1,4 +1,4 @@
-# Welcome to InstaLink!
+# Welcome to Ulink (Formerly Instalink)!
 
 InstaLink is a simple Instagram Bio Link Generator. Instalink is the first (and only) bio link generator that has send-away messages
 
@@ -8,15 +8,15 @@ Send-away messages that are short mesages that your guests will see when they cl
 
 # Geting Started
 
-Fist you will need to deploy Instalink to a host. Here are some quick start buttons:
+Fist you will need to deploy Ulink to a host. Here are some quick start buttons:
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Benja-media/instalink)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Benja-media/Ulink)
 
-[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/benja-media/instalink)
+[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/benja-media/Ulink)
 
 Glitch handles files different. You will have a .html ending of your page if you do not use index!
 
-[![forks - instalink](https://img.shields.io/github/forks/benja-media/instalink?style=social)](https://github.com/benja-media/instalink/forks)
+[![forks - instalink](https://img.shields.io/github/forks/benja-media/instalink?style=social)](https://github.com/benja-media/Ulink/forks)
 
 # Adding your links
 
@@ -28,40 +28,44 @@ Here is an example config.json file
 
 ```
 {
-  "user": "benmmonster",
-  "user_url": "benmmonster",
+  "user": "instagrammer",
+  "user_url": "instagrammer",
   "media": "https://instagram.com",
   "symbol": "@",
   "media_name": "Instagram",
-  "name": "Ben M",
+  "name": "Instagrammer",
   "photo": "https://cdn.glitch.com/35409746-8e4a-406e-ac47-16c4db92cad8%2F10x100profile.jpeg",
   "img_top": "150",
-  "img_left_mobile": "37",
-  "img_left":"46.5",
   "img_margin": "0",
-  "mobile_home":"/@/instagramer.html",
-  "desk_home":"/a/instagramer.html",
+  "home": "/@/instagrammer.html",
 
   "msg": "You are being teleported to",
 
   "title1": "Link 1",
-  "link1": "https://example.com",
+  "link1": "/link.html",
 
   "title2": "Link 2",
-  "link2": "https://example.com",
+  "link2": "/link.html",
 
-  "title3": "Link 3",
-  "link3": "https://example.com",
+  "title3": "",
+  "link3": "",
 
-  "title4": "Link 4",
-  "link4": "https://example.com",
+  "title4": "",
+  "link4": "",
 
-  "title5": "Link5",
-  "link5": "https://example.com",
+  "title5": "",
+  "link5": "",
+  
+  "title6":"",
+  "link6":"",
+  
+  "title7":"",
+  "link7":"",
 
+  "bio": "Semi avid railfan. Into into 3d printing #ender3pro I take videos with my @gopro of under trains! AKA Programer, Maintainer, And writer @ Benja Media LTD",
 
-  "bio": "Semi avid railfan. Into into 3d printing #ender3pro I take videos with my @gopro of under trains! AKA Programer, Maintainer, And writer @ Benja Media LTD"
-
+  "Topic1": "",
+  "Topic2": ""
 }
 ```
 
@@ -93,25 +97,18 @@ When a guest clicks on a link before they are redirected they will see `msg` + `
 
 `img_top` Is the space between the top and the logo
 
-`img_left_mobile` Is the space between the left and the logo for mobile
+`img_left_mobile` Is the space between the left and the logo for mobile **DEPRICATED**
 
-`img_left` Is the space between the left and the logo for standard screens
+`img_left` Is the space between the left and the logo for standard screens **DEPRICATED**
 
 `img_margin` Is the margin for your image
 
-`mobile_home` Is the mobile home
+`mobile_home` Is the mobile home  **DEPRICATED**
 
-`desk_home` Is the desktop home page.
+`desk_home` Is the desktop home page. **DEPRICATED**
 
 `bio` Is your bio.
 
-**_NOTE_**
-
-`title5` & `link5` Are turned off automaticly. You do not need to remove it from config.json file. See below on how to turn it off
-
-# Add a 5th link.
-
-Instalink has come with support for five links but it is turned off by default. To turn it on uncomment line `9` **_AND_** `54`  On `/a` **_AND_** `/@` This will show "Link 5"
 
 # Extras
 
