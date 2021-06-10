@@ -1,35 +1,40 @@
 {
-  "user": "Instagramer",
-  "user_url": "Instagramer",
+  "user": "benmmonster",
+  "user_url": "benmmonster",
   "media": "https://instagram.com",
   "symbol": "@",
   "media_name": "Instagram",
-  "name": "Instagramer",
+  "name": "Ben M",
   "photo": "https://cdn.glitch.com/35409746-8e4a-406e-ac47-16c4db92cad8%2F10x100profile.jpeg",
   "img_top": "150",
-  "img_left_mobile": "37",
-  "img_left": "46.5",
   "img_margin": "0",
-  "mobile_home": "/@/instagramer.html",
-  "desk_home": "/a/instagramer.html",
+  "home": "/@/benmmonster.html",
 
   "msg": "You are being teleported to",
 
-  "title1": "Link 1",
-  "link1": "https://example.com",
+  "title1": "",
+  "link1": "",
 
-  "title2": "Link 2",
-  "link2": "https://example.com",
+  "title2": "",
+  "link2": "",
 
-  "title3": "Link 3",
-  "link3": "https://example.com",
+  "title3": "",
+  "link3": "",
 
-  "title4": "Link 4",
-  "link4": "https://example.com",
+  "title4": "",
+  "link4": "",
 
-  "title5": "Link 5",
-  "link5": "https://google.com",
+  "title5": "",
+  "link5": "",
+  
+  "title6":"",
+  "link6":"",
+  
+  "title7":"",
+  "link7":"",
 
-  "bio": "This person has not setup a profile yet..."
+  "bio": "Semi avid railfan. Into into 3d printing #ender3pro I take videos with my @gopro of under trains! AKA Programer, Maintainer, And writer @ Benja Media LTD",
 
+  "Topic1": "",
+  "Topic2": ""
 }
