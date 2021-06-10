@@ -24,7 +24,7 @@ function title() {
         Link.user +
         "! " +
         Link.user +
-        " used InstaLink to create this page Click here to get yours now!";
+        " used Ulink to create this page Click here to get yours now!";
     }
   };
   xmlhttp.open("GET", "/config.json", true);
