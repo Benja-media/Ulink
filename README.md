@@ -1,6 +1,6 @@
-# Welcome to Ylink (Formerly Instalink)!
+# Welcome to Ulink (Formerly Instalink)!
 
-Ylink is a simple Instagram Bio Link Generator. Instalink is the first (and only) bio link generator that has send-away messages
+Ulink is a simple Instagram Bio Link Generator. Instalink is the first (and only) bio link generator that has send-away messages
 
 Send-away messages that are short mesages that your guests will see when they click on a link. An example is
 
