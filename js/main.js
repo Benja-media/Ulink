@@ -13,6 +13,10 @@ var xmlhttp = new XMLHttpRequest();
           document.getElementById("Link2").innerHTML = Link.title2;
           document.getElementById("Link3").innerHTML = Link.title3;
           document.getElementById("Link4").innerHTML = Link.title4;
+          document.getElementById("Link5").innerHTML = Link.title5;
+          document.getElementById("Link6").innerHTML = Link.title5;
+          document.getElementById("Link7").innerHTML = Link.title7;
+          // End of Links
           document.getElementById("user").innerHTML = Link.symbol + Link.user;
           document.getElementById("name").innerHTML = Link.name;
 
@@ -110,6 +114,21 @@ var xmlhttp = new XMLHttpRequest();
               Link.media_name +
               "!";
             window.location.href = Link.media + "/" + Link.user_url;
+          }
+        };
+        xmlhttp.open("GET", "/config.json", true);
+        xmlhttp.send();
+      }
+
+
+function name() {
+  
+  
+  var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            var Link = JSON.parse(this.responseText);
+            document.getElementById("name").innerHTML = "AKA " + Link.user
           }
         };
         xmlhttp.open("GET", "/config.json", true);

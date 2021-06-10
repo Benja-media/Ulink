@@ -10,38 +10,19 @@
   
 <body>
 <script>
-var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
-    if (mobile) {
-        
-      
+
       var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
-            var mobile = JSON.parse(this.responseText);
-            window.location.href = mobile.mobile_home;
+            var loc = JSON.parse(this.responseText);
+            window.location.href = loc.home;
           }
         };
         xmlhttp.open("GET", "/config.json", true);
         xmlhttp.send();
-      }
       
       
-      
-     else {
-     
-       
-var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() {
-          if (this.readyState == 4 && this.status == 200) {
-            var desk = JSON.parse(this.responseText);
-            window.location.href = desk.desk_home;
-          }
-        };
-        xmlhttp.open("GET", "/config.json", true);
-        xmlhttp.send();
-      }
     
-  
     
     
     </script>

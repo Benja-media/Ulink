@@ -2,8 +2,8 @@
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
-    var Bio = JSON.parse(this.responseText);
-    document.getElementById("bio").innerHTML = Bio.bio;
+    var no = JSON.parse(this.responseText);
+    document.getElementById("bio").innerHTML = no.name + " Has not setup this link! Please try a different link";
   }
 };
 xmlhttp.open("GET", "/config.json", true);
@@ -18,13 +18,12 @@ function title() {
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       var Link = JSON.parse(this.responseText);
-      document.title = Link.symbol + Link.user + " | Instalink";
       document.getElementById("Atrubution").innerHTML =
         "This page was created by " +
         Link.user +
         "! " +
         Link.user +
-        " used Ulink to create this page Click here to get yours now!";
+        " used InstaLink to create this page Click here to get yours now!";
     }
   };
   xmlhttp.open("GET", "/config.json", true);
@@ -39,6 +38,8 @@ var xmlhttp = new XMLHttpRequest();
         if (this.readyState == 4 && this.status == 200) {
           var Link = JSON.parse(this.responseText);
           document.getElementById("user").innerHTML = Link.symbol + Link.user;
+          document.getElementById("name").innerHTML = Link.name;
+
 
 
         }
