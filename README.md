@@ -38,6 +38,7 @@ Here is an example config.json file
   "img_top": "150",
   "img_margin": "0",
   "home": "/@/instagrammer.html",
+  "display":"instagrammer",
 
   "msg": "You are being teleported to",
 
@@ -85,11 +86,19 @@ Here is an example config.json file
 
 `photo` Is your avatar! This must be self hosted! Using your instagram profile photo will not work due to CORS!
 
-Recomeded dimensions is 100x100px!
+***Recomeded dimensions is 100x100px!***
+
+`img_top` Is the space between the image and the top (Recomended value is 0)
+
+`img_margin` Is the margin of your profile photo (Recomended value is 0)
+
+`home` Is the home page of your bio link. (If some one gets a 404 error or goes to index.html they will be redirected to that page)
+
+`display` is the title of the page (`@instagrammer` becomes `@instagrammer | Ulink` The ` | Ulink` Part is required for atribution!
 
 `msg` is your send away message. The default is `You are being teleported to` **_YOU DO NOT NEED A SPACE AT THE END_** Instalink add's it in automaticly
 
-When a guest clicks on a link before they are redirected they will see `msg` + `link#`
+When a guest clicks on a link before they are redirected they will see `msg` + value of `link#`
 
 `title#` Is the title of the link
 
@@ -97,15 +106,7 @@ When a guest clicks on a link before they are redirected they will see `msg` + `
 
 `img_top` Is the space between the top and the logo
 
-`img_left_mobile` Is the space between the left and the logo for mobile **DEPRICATED**
-
-`img_left` Is the space between the left and the logo for standard screens **DEPRICATED**
-
 `img_margin` Is the margin for your image
-
-`mobile_home` Is the mobile home  **DEPRICATED**
-
-`desk_home` Is the desktop home page. **DEPRICATED**
 
 `bio` Is your bio.
 
