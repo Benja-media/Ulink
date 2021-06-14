@@ -16,7 +16,7 @@ Fist you will need to deploy Ulink to a host. Here are some quick start buttons:
 
 Glitch handles files different. You will have a .html ending of your page if you do not use index!
 
-[![forks - instalink](https://img.shields.io/github/forks/benja-media/instalink?style=social)](https://github.com/benja-media/Ulink/forks)
+[![forks - instalink](https://img.shields.io/github/forks/benja-media/Ulink?style=social)](https://github.com/benja-media/Ulink/forks)
 
 # Adding your links
 
