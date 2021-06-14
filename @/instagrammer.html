@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- This is just loading the title first -->
+    <script>
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          var Link = JSON.parse(this.responseText);
+          // Please do not remove this! This is part of the atribution required!
+            document.title = Link.display + " |   Ulink";
+        }
+      };
+      xmlhttp.open("GET", "/config.json", true);
+      xmlhttp.send();
+    </script>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Insert extra's here -->
-    <!--<script src="extras/5.js"></script> -->
     <script src="/js/topics.js"></script>
     <script src="/js/404.js"></script>
-
-    <title>Ulink!</title>
-
+    <script src="/js/main.js"></script>
+    <script src="/js/photo.js"></script>
+    <script src="/js/bio.js"></script>
     <link rel="shortcut icon" href="/styles/logo.png" />
-    <!-- The in app browser does not reconize favions at the time -->
-
-    <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/styles/main.css" />
     <link rel="stylesheet" href="/styles/animation.css" />
     <link rel="stylesheet" href="/styles/profile.css" />
@@ -62,21 +69,13 @@
     <a onclick="click6()"><p id="Link6" class="link"></p></a>
     <a onclick="click7()"><p id="Link7" class="link"></p></a>
 
-
-
     <!--  <a onclick="click5()"><p id="Link5" class="gradient-text"></p></a> -->
     <!-- Scripts -->
-    <script src="/js/main.js"></script>
-    <script src="/js/photo.js"></script>
-    <script src="/js/bio.js"></script>
 
+    <p class="bio">&#45;</p>
     <br />
-
-    <br />
-    <p class="Atrubution">&#45;</p>
-    <br />
+    <!-- Please do not remove this! This is part of the atribution required!-->
     <a onclick="Atrubution()"><p id="Atrubution" class="Atrubution"></p></a>
-
     <!--<div id="img" class ="img"></div>-->
   </body>
 </html>

@@ -97,21 +97,21 @@ When a guest clicks on a link before they are redirected they will see `msg` + `
 
 `img_top` Is the space between the top and the logo
 
-`img_left_mobile` Is the space between the left and the logo for mobile **This has been removed and replaced with Instacheck**
+`img_left_mobile` Is the space between the left and the logo for mobile **DEPRICATED**
 
-`img_left` Is the space between the left and the logo for standard screens **This has been removed and replaced with Instacheck**
+`img_left` Is the space between the left and the logo for standard screens **DEPRICATED**
 
 `img_margin` Is the margin for your image
 
-`mobile_home` Is the mobile home  **This has removed**
+`mobile_home` Is the mobile home  **DEPRICATED**
 
-`desk_home` Is the desktop home page. **This has been removed**
+`desk_home` Is the desktop home page. **DEPRICATED**
 
 `bio` Is your bio.
 
 
 # Extras
 
-You may notice a folder called extras. This is where all the extra parts will go. (EX: Themes, ~~5th link~~, Push notifications etc...) I will release extra's eventualy.
+You may notice a folder called extras. This is where all the extra parts will go. (EX: Themes, 5th link, Push notifications etc...) I will release extra's eventualy.
 
 I hope this is easy to understand. If you need more help create an issue in github and I will look in to it. Please see [Extras](../blob/master/extras/README.md)
