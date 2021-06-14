@@ -11,14 +11,11 @@ xmlhttp.send();
 
 /*ATR*/
 
-window.onload = title();
 
-function title() {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       var Link = JSON.parse(this.responseText);
-      document.title = Link.symbol + Link.user + " | Ulink";
       document.getElementById("Atrubution").innerHTML =
         "This page was created by " +
         Link.user +
@@ -29,7 +26,7 @@ function title() {
   };
   xmlhttp.open("GET", "/config.json", true);
   xmlhttp.send();
-}
+
 
 
 /*User*/
