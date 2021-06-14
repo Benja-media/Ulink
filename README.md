@@ -112,6 +112,6 @@ When a guest clicks on a link before they are redirected they will see `msg` + `
 
 # Extras
 
-You may notice a folder called extras. This is where all the extra parts will go. (EX: Themes, 5th link, Push notifications etc...) I will release extra's eventualy.
+You may notice a folder called extras. This is where all the extra parts will go. (EX: Themes, ~~5th link~~, Push notifications etc...) I will release extra's eventualy.
 
 I hope this is easy to understand. If you need more help create an issue in github and I will look in to it. Please see [Extras](../blob/master/extras/README.md)
