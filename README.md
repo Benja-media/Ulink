@@ -24,7 +24,7 @@ All of the Settings for Instalink are in link.json file
 
 Here is an example config.json file
 
-**_Version Prior to 2.1.4 Has it as "link.json" This no longer works_**
+**_Version Prior to 2.1.4 Has `config.json` named `link.json` This is no longer supported!_**
 
 ```
 {
@@ -84,7 +84,7 @@ Here is an example config.json file
 
 `name` Is your display name
 
-`photo` Is your avatar! This must be self hosted! Using your instagram profile photo will not work due to CORS!
+`photo` Is your avatar! This must be self hosted! Using your instagram profile photo will not work due to CORS restrictions!
 
 ***Recomeded dimensions is 100x100px!***
 
@@ -116,3 +116,5 @@ When a guest clicks on a link before they are redirected they will see `msg` + v
 You may notice a folder called extras. This is where all the extra parts will go. (EX: Themes, 5th link, Push notifications etc...) I will release extra's eventualy.
 
 I hope this is easy to understand. If you need more help create an issue in github and I will look in to it. Please see [Extras](../blob/master/extras/README.md)
+
+All new Extras should be hosted on the creators repo with Github pages!
