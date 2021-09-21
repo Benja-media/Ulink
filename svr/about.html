@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- This is just loading the title first -->
+    <script>
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          var Link = JSON.parse(this.responseText);
+          // Please do not remove this! This is part of the atribution required!
+          document.title = Link.display + " |   About ULINK";
+        }
+      };
+      xmlhttp.open("GET", "/config.json", true);
+      xmlhttp.send();
+    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="/svr/svr.js"></script>
+
+    <link rel="shortcut icon" href="/styles/logo.png" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/animation.css" />
+    <link rel="stylesheet" href="/styles/profile.css" />
+    <link rel="stylesheet" href="/styles/button.css" />
+
+  </head>
+  <body onload="text()">
+    <h1><strong>U</strong>link</h1>
+    <p style="font-size: 11px">
+      By <a href="https://www.instagram.com/benmmonster/">@benmmonster</a>
+    </p>
+     
+    <p style ="font-size: 18px">Ulink was created by <a href="https://benja.ml/instagram">@benmmonster</a>. Ulink is a bio link generator that is 100% open source! Ulink Uses JSON to display your links!</p>
+    <br>
+    
+     <p style ="font-size: 18px"> Hosts that work well with Ulink:
+       <br>
+    <br>
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/Benja-media/Ulink">   
+<img src="https://www.netlify.com/img/deploy/button.svg" alt="Netlify" class="netlify">
+    </a>
+   <br>
+    
+    <a href="https://replit.com/github/Benja-media/Ulink">
+<img src="https://cdn.glitch.com/83ec9cc9-0b7a-4152-bcff-c54a960cdd8b%2Freplit-logo-png-transparent.png?v=1632241627329" alt="Netlify" class="replit">
+    </a>
+       
+       <br>
+       <a href="https://glitch.com/edit/#!/import/github/benja-media/Ulink"><img src="https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg" alt="Remix on Glitch" style="border-radius: 0px;" /></a>
+       
+       <br>
+       <br>
+       
+       <a href="https://github.com/benja-media/Ulink">
+       <img alt="GitHub forks" src="https://img.shields.io/github/forks/benja-media/Ulink?color=blue&label=Benja-Media%2FUlink&style=for-the-badge" style="border-radius: 0px;">
+       </a>
+    <div class="center">
+      
+      <p id="bio" class="CD"></p>
+      
+      
+      <p> About this version of Ulink</p>
+      
+      <p id="extrainfo" style="font-size: 14px;"> Extra Info: ❌</p>
+      <br>
+      <p id="notif" style="font-size: 14px;"> Notif: ❌</p>
+
+      <!-- Please keep above! You are required to atruibute the authour (me)-->
+    </div>
+  </body>
+</html>
