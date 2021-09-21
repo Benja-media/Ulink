@@ -12,18 +12,23 @@
       var xmlhttp = new XMLHttpRequest();
       xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-          var loc = JSON.parse(this.responseText);
-
-          if (loc.home === null || loc.home === "") {
-            console.error("Home location is required!");
-            alert("Home location has not been set...");
-          } else {
-            window.location.href = loc.home;
+          var SVR = JSON.parse(this.responseText);
+console.log(SVR.home)
+          if (SVR.MD === "DBG") {
+            window.location.href = "/svr/err.html?dbg=true";
+          } 
+          else {
+            if (SVR.HM === null || SVR.HM === "") {
+              window.location.href = "/svr/err.html?loc=false"
+            } else {
+              window.location.href = SVR.HM;
+            }
           }
         }
       };
-      xmlhttp.open("GET", "/config.json", true);
+      xmlhttp.open("GET", "/svr/svr.json", true);
       xmlhttp.send();
+
     </script>
   </body>
 </html>

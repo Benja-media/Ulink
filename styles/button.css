@@ -1,0 +1,16 @@
+.netlify {
+  border-radius: 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+.replit {
+  border-radius: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 146px;
+  height: auto;
+}

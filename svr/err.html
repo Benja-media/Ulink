@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- This is just loading the title first -->
+    <script>
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          var Link = JSON.parse(this.responseText);
+          // Please do not remove this! This is part of the atribution required!
+          document.title = Link.display + " |   Ulink ERR";
+        }
+      };
+      xmlhttp.open("GET", "/config.json", true);
+      xmlhttp.send();
+    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="/svr/err.js"></script>
+
+    <link rel="shortcut icon" href="/styles/logo.png" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/animation.css" />
+    <link rel="stylesheet" href="/styles/profile.css" />
+  </head>
+  <body onload="text()">
+    <h1><strong>U</strong>link ERR</h1>
+    <p style="font-size: 11px">
+      By <a href="https://www.instagram.com/benmmonster/">@benmmonster</a>
+    </p>
+    
+    <p id="ERR"></p>
+    <p id="code" style="font-size: 12px"></p>
+
+    <a onclick="click1()"><p id="Link" class="link"></p></a>
+    
+    <a onclick="back()"><p id="back" class="link">Back</p></a>
+    
+    </p>
+    <div class="center">
+      
+      <p id="bio" class="CD"></p>
+      <!-- Please keep above! You are required to atruibute the authour (me)-->
+    </div>
+  </body>
+</html>

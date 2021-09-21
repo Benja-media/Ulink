@@ -16,15 +16,14 @@ Fist you will need to deploy Ulink to a host. Here are some quick start buttons:
 
 Glitch handles files different. You will have a .html ending of your page if you do not use index!
 
-[![forks - instalink](https://img.shields.io/github/forks/benja-media/Ulink?style=social)](https://github.com/benja-media/Ulink/forks)
-
+[![forks - instalink](https://img.shields.io/github/forks/benja-media/Ulink?style=social)](https://github.com/Benja-media/Ulink/network/members)
 # Adding your links
 
 All of the Settings for Instalink are in link.json file
 
 Here is an example config.json file
 
-**_Version Prior to 2.1.4 Has `config.json` named `link.json` This is no longer supported!_**
+**_Version Prior to 2.1.4 Has it as "link.json" This no longer works_**
 
 ```
 {
@@ -37,7 +36,6 @@ Here is an example config.json file
   "photo": "https://cdn.glitch.com/35409746-8e4a-406e-ac47-16c4db92cad8%2F10x100profile.jpeg",
   "img_top": "150",
   "img_margin": "0",
-  "home": "/@/instagrammer.html",
   "display":"instagrammer",
 
   "msg": "You are being teleported to",
@@ -84,7 +82,7 @@ Here is an example config.json file
 
 `name` Is your display name
 
-`photo` Is your avatar! This must be self hosted! Using your instagram profile photo will not work due to CORS restrictions!
+`photo` Is your avatar! This must be self hosted! Using your instagram profile photo will not work due to CORS!
 
 ***Recomeded dimensions is 100x100px!***
 
@@ -93,6 +91,7 @@ Here is an example config.json file
 `img_margin` Is the margin of your profile photo (Recomended value is 0)
 
 `home` Is the home page of your bio link. (If some one gets a 404 error or goes to index.html they will be redirected to that page)
+***NOW LOCATED IN /SVR/SVR.JSON***
 
 `display` is the title of the page (`@instagrammer` becomes `@instagrammer | Ulink` The ` | Ulink` Part is required for atribution!
 
@@ -116,5 +115,3 @@ When a guest clicks on a link before they are redirected they will see `msg` + v
 You may notice a folder called extras. This is where all the extra parts will go. (EX: Themes, 5th link, Push notifications etc...) I will release extra's eventualy.
 
 I hope this is easy to understand. If you need more help create an issue in github and I will look in to it. Please see [Extras](../blob/master/extras/README.md)
-
-All new Extras should be hosted on the creators repo with Github pages!

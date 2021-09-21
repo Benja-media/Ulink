@@ -8,7 +8,6 @@
   "photo": "https://cdn.glitch.com/35409746-8e4a-406e-ac47-16c4db92cad8%2F10x100profile.jpeg",
   "img_top": "150",
   "img_margin": "0",
-  "home": "/@/instagrammer.html",
   "display":"instagrammer",
 
   "msg": "You are being teleported to",
@@ -35,6 +34,9 @@
   "link7":"",
 
   "bio": "This person has not setup a bio yet...",
+  
+  "err_link_title":"Err link",
+  "err_link_url":"/h",
 
   "Topic1": "",
   "Topic2": ""
