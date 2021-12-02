@@ -2,10 +2,6 @@
 
 Ulink is a simple Instagram Bio Link Generator. Instalink is the first (and only) bio link generator that has send-away messages
 
-Send-away messages that are short mesages that your guests will see when they click on a link. An example is
-
-`You are being teleported to` `Where ever they are being teleported to`
-
 # Geting Started
 
 Fist you will need to deploy Ulink to a host. Here are some quick start buttons:
