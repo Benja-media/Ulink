@@ -14,15 +14,15 @@
       };
       xmlhttp.open("GET", "/config/config.json", true);
       xmlhttp.send();
-      
-      
+            
     </script>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="/js/bio.js"></script>
     <link rel="shortcut icon" href="/styles/logo.png" />
-    <link rel="stylesheet" href="/styles/legacy.css" />
+    <!-- Style selector -->
+    <link rel="stylesheet" href="/styles/gradient.css" />
   </head>
   <body>
 
@@ -58,8 +58,11 @@
       myImg.src = "https://cdn.glitch.com/35409746-8e4a-406e-ac47-16c4db92cad8%2F10x100profile.jpeg"; 
       header.appendChild(myImg);
 
-      const myH1 = document.createElement('h1');
+      const myH1 = document.createElement('a');
       myH1.textContent = jsonObj['name'];
+      myH1.setAttribute('href', jsonObj['profile']);
+      myH1.setAttribute('class', "h1");
+      myH1.setAttribute("id", "h1");
       header.appendChild(myH1);
 
       const p = document.createElement('p');

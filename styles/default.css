@@ -1,3 +1,5 @@
+/* CHANGE LINE 25 IN INDEX.HTML TO  <link rel="stylesheet" href="/styles/default.css" /> TO USE ME */
+
 .link {
   /* Fallback: Set a background color. */
   background-color: #CA4246;
@@ -67,7 +69,7 @@ img {
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
-h1 {
+.h1 {
   font-family: 'Outfit', sans-serif;
   font-weight: bold;
   font-size: 2em;

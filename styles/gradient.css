@@ -1,8 +1,11 @@
+/* CHANGE LINE 25 IN INDEX.HTML TO  <link rel="stylesheet" href="/styles/gradient.css" /> TO USE ME */
+
+/* OPTIONS */
 :root {
   /* First Colour */
-  --1: grey;
+  --1: red;
   /* Second Colour */
-  --2: green;
+  --2: yellow;
   /* Direction */
   --Direction: to right;
   /* Text & Border Colour */
@@ -15,8 +18,16 @@ background-image: linear-gradient(var(--Direction), var(--1) , var(--2));
 font-family: 'Open Sans', sans-serif;
 color: var(--clr)
 }
-h1 {
+.h1 {
+  font-weight: bold;
+  font-size: 2em;
   text-align: center;
+  margin-bottom: 0;
+  margin-bottom: -0.25em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
 }
 h1 {text-align: center;}
 p  {text-align: center;}
