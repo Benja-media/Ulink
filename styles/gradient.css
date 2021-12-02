@@ -1,11 +1,23 @@
-body {
-  background: rgb(131,58,180);
-  background: linear-gradient(225deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);;
-  background-attachment: fixed;
-  font-family: 'Open Sans', sans-serif;
-
+:root {
+  /* First Colour */
+  --1: grey;
+  /* Second Colour */
+  --2: green;
+  /* Direction */
+  --Direction: to right;
+  /* Text & Border Colour */
+  --clr: white;
 }
-h2 {text-align: center;}
+
+body {
+
+background-image: linear-gradient(var(--Direction), var(--1) , var(--2));
+font-family: 'Open Sans', sans-serif;
+color: var(--clr)
+}
+h1 {
+  text-align: center;
+}
 h1 {text-align: center;}
 p  {text-align: center;}
 h3 {text-align: center;}
@@ -17,7 +29,7 @@ a {text-align: center;}
   margin: auto;
   width: 60%;
   height: 60%;
-  border: 3px solid #ffffff;
+  border: 3px solid var(--clr);
   padding: 8px;
   margin: auto;
   margin-bottom: 10px;
@@ -29,13 +41,7 @@ a {text-align: center;}
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  border: 3px solid #fffff;
-}
-
-body {
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-
+  border: 3px solid var(--clr);
 }
 
 a:link {
@@ -87,5 +93,5 @@ img {
   margin-left: auto;
   margin-right: auto;
   border-style: solid;
-  border: 3px solid #fffff;
+  border: 3px solid var(--clr);
 }

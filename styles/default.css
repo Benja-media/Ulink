@@ -58,19 +58,33 @@
   
 
 
-/* Style the rest of the page. */
-
-
-header {
-  margin-top: 1em;
-  margin-top: calc(50vh - 3em);
+img {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
 h1 {
-  font-family: "Archivo Black", sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-weight: bold;
   font-size: 2em;
   text-align: center;
+  margin-bottom: 0;
+  margin-bottom: -0.25em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+a {
+  font-family: 'Outfit', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
   margin-bottom: 0;
   margin-bottom: -0.25em;
   display: block;
@@ -80,14 +94,55 @@ h1 {
 }
 
 p {
-  font-family: "Archivo Black", sans-serif;
-  font-weight: bold;
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 0;
-  margin-bottom: -0.25em;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  cursor: pointer;
+    font-family: 'Outfit', sans-serif;
+
+}
+
+a:link {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+}
+
+a:active {
+  text-decoration: none;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  backround: white;
+}
+h2 {
+  text-align: center !important;
+}
+h1 {
+  text-align: center !important;
+}
+p {
+  text-align: center !important;
+}
+h3 {
+  text-align: center !important;
+}
+
+.atr {
+  padding-top: 50px;
 }

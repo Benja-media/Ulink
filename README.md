@@ -17,101 +17,108 @@ Fist you will need to deploy Ulink to a host. Here are some quick start buttons:
 Glitch handles files different. You will have a .html ending of your page if you do not use index!
 
 [![forks - instalink](https://img.shields.io/github/forks/benja-media/Ulink?style=social)](https://github.com/Benja-media/Ulink/network/members)
+
 # Adding your links
 
-All of the Settings for Instalink are in link.json file
+All options are required unless otherwise stated
 
 Here is an example config.json file
 
-**_Version Prior to 2.1.4 Has it as "link.json" This no longer works_**
+**_Link structure has changed!!! Below is the new verion_**
 
 ```
 {
   "user": "instagrammer",
-  "user_url": "instagrammer",
-  "media": "https://instagram.com",
+  "profile": "https://instagram.com/instagrammer",
   "symbol": "@",
-  "media_name": "Instagram",
   "name": "Instagrammer",
   "photo": "https://cdn.glitch.com/35409746-8e4a-406e-ac47-16c4db92cad8%2F10x100profile.jpeg",
-  "img_top": "150",
   "img_margin": "0",
   "display":"instagrammer",
 
-  "msg": "You are being teleported to",
-
-  "title1": "Link 1",
-  "link1": "/link.html",
-
-  "title2": "Link 2",
-  "link2": "/link.html",
-
-  "title3": "",
-  "link3": "",
-
-  "title4": "",
-  "link4": "",
-
-  "title5": "",
-  "link5": "",
-  
-  "title6":"",
-  "link6":"",
-  
-  "title7":"",
-  "link7":"",
-
-  "bio": "Semi avid railfan. Into into 3d printing #ender3pro I take videos with my @gopro of under trains! AKA Programer, Maintainer, And writer @ Benja Media LTD",
-
-  "Topic1": "",
-  "Topic2": ""
+  "links":[
+    {"id":"1","title":"Link_1","url":"/link"},
+    {"id":"2","title":"Link_2","url":"/link"},
+    {"id":"3","title":"Link_3","url":"/link"}
+  ]
 }
 ```
 
+## Options
+
 `user` Is your username.
 
-`user_url` Is your username url **_DO NOT INCLUDE THE FULL LINK_** Only whatever comes after the domain (Ommit the first `/`) EX:
-
-`https://instagram.com/benmmonster` becomes `benmmonster`
-
-`media` is your social media name
+`profile` Is the URL to your chosen profile
 
 `symbol` is the symbol from your name EX: `@benmmonster`
 
-`media_name` is the name of your primary social media
-
 `name` Is your display name
 
-`photo` Is your avatar! This must be self hosted! Using your instagram profile photo will not work due to CORS!
+`photo` This is your URL to your avatar! Linking directly to your social media avatar is not supported due to CORS restrictions!
 
-***Recomeded dimensions is 100x100px!***
+**_Recomeded dimensions is 100x100px!_**
 
-`img_top` Is the space between the image and the top (Recomended value is 0)
+## Links
 
-`img_margin` Is the margin of your profile photo (Recomended value is 0)
+In version 2.2.0 The list of links was moved to a array structure to allow unlimited links!!! 
 
-`home` Is the home page of your bio link. (If some one gets a 404 error or goes to index.html they will be redirected to that page)
-***NOW LOCATED IN /SVR/SVR.JSON***
+Please note that all later versions don't support Arrays
 
-`display` is the title of the page (`@instagrammer` becomes `@instagrammer | Ulink` The ` | Ulink` Part is required for atribution!
+`id` Is a number `0 - ∞` That gives an ID to the element. This value is required
 
-`msg` is your send away message. The default is `You are being teleported to` **_YOU DO NOT NEED A SPACE AT THE END_** Instalink add's it in automaticly
+`title` Is the display to your link
 
-When a guest clicks on a link before they are redirected they will see `msg` + value of `link#`
+`url` Is the destination
 
-`title#` Is the title of the link
+# Styles
 
-`link#` Is the destanation URL
+I am in the procces of writing styles for Ulink. I will update this file with a list of styles
 
-`img_top` Is the space between the top and the logo
+List of styles:
 
-`img_margin` Is the margin for your image
+- Default
+    
+      Authour: Benja Media Ltd. (Ulink)
+      Built in style | Default style
 
-`bio` Is your bio.
+      Options
+        --
+
+- Legacy
+
+      Authour: Benja Media Ltd. (Ulink)
+      Built in style
+
+      Options
+        --
+
+- Gradient
+
+      Authour: Benja Media Ltd. (Ulink)
+      Built in style
+
+      Options
+        /* First Colour */
+        --1: grey;
+        /* Second Colour */
+        --2: green;
+        /* Direction */
+        --Direction: to right;
+        /* Text & Border Colour */
+        --clr: white;
+
+How to change styles:
+
+Go to `index.html:25` Change `styles/default.css` to the name of the style ex:
+
+    <link rel="stylesheet" href="/styles/default.css" />
+Becomes:
+
+    <link rel="stylesheet" href="/styles/legacy.css" />
 
 
 # Extras
 
-You may notice a folder called extras. This is where all the extra parts will go. (EX: Themes, 5th link, Push notifications etc...) I will release extra's eventualy.
+**ULINK SVR HAS BEEN DISCONTINUED**
 
-I hope this is easy to understand. If you need more help create an issue in github and I will look in to it. Please see [Extras](../blob/master/extras/README.md)
+Upload to `/extras` and link to `index.html`

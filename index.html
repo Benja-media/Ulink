@@ -1,34 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ulink!</title>
-  </head>
-
-  <body>
+    <!-- This is just loading the title first -->
     <script>
       var xmlhttp = new XMLHttpRequest();
       xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-          var SVR = JSON.parse(this.responseText);
-console.log(SVR.home)
-          if (SVR.MD === "DBG") {
-            window.location.href = "/svr/err.html?dbg=true";
-          } 
-          else {
-            if (SVR.HM === null || SVR.HM === "") {
-              window.location.href = "/svr/err.html?loc=false"
-            } else {
-              window.location.href = SVR.HM;
-            }
-          }
+          var Link = JSON.parse(this.responseText);
+          // Please do not remove this! This is part of the atribution required!
+            document.title = Link.display + " |   Ulink";
+
         }
       };
-      xmlhttp.open("GET", "/svr/svr.json", true);
+      xmlhttp.open("GET", "/config/config.json", true);
       xmlhttp.send();
-
+      
+      
     </script>
-  </body>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="/js/bio.js"></script>
+    <link rel="shortcut icon" href="/styles/logo.png" />
+    <link rel="stylesheet" href="/styles/legacy.css" />
+  </head>
+  <body>
+
+      <header>
+    <!--  <div id="imgwpr" class="imgwpr">
+        <div id="img" style="border-radius: 25px;"></div>
+      </div>-->
+      </header>
+
+      <section>
+
+      </section>
+
+   <script>
+     const header = document.querySelector('header');
+    const section = document.querySelector('section');
+
+    let requestURL = '/config/config.json';
+    let request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'text';
+    request.send();
+
+    request.onload = function() {
+      const js_res = request.response;
+      const js_par = JSON.parse(js_res);
+      writeHeader(js_par);
+      js_obj(js_par);
+    }
+
+    function writeHeader(jsonObj) {
+      const myImg = document.createElement('img')
+      myImg.src = "https://cdn.glitch.com/35409746-8e4a-406e-ac47-16c4db92cad8%2F10x100profile.jpeg"; 
+      header.appendChild(myImg);
+
+      const myH1 = document.createElement('h1');
+      myH1.textContent = jsonObj['name'];
+      header.appendChild(myH1);
+
+      const p = document.createElement('p');
+      p.textContent = jsonObj['symbol'] + jsonObj['user'];
+      header.appendChild(p);
+    }
+
+    function js_obj(jsonObj) {
+      const links = jsonObj['links'];
+
+      for(let i = 0; i < links.length; i++) {
+        const list = document.createElement('link_list');
+        const h2 = document.createElement('h2');
+        const link = document.createElement('a');
+        const url = document.createElement('p');
+        const myList = document.createElement('ul');
+
+        h2.textContent = links[i].name;
+        link.textContent = links[i].title;
+        link.setAttribute('href', links[i].url);
+        link.setAttribute('class', "link");
+        link.setAttribute("id", links[i].id + "-title");
+
+        list.appendChild(h2);
+        list.appendChild(link);
+        list.appendChild(url);
+        list.appendChild(myList);
+
+        section.appendChild(list);
+      }
+    }
+    </script>
+    <p id="Atrubution" class="atr"></p>
 </html>
