@@ -10,22 +10,22 @@ var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     var json = JSON.parse(this.responseText);
-    var link = document.createElement("a");
+    var img_elem = document.createElement("a");
 
-    link.style.position = "absolute";
-    link.style.left = width + "px";
-    link.style.right= width +  "px"; 
-    link.style.top = json.img_top + "px";
-    link.style.margin = json.img_margin;
-    link.style.borderRadius = "25px";
-    link.href = json.media + "/" + json.user_url;
-    link.alt = "Go to " + json.user + "&#39;s " + json.media_name + "!";
+    img_elem.style.position = "absolute";
+    img_elem.style.left = width + "px";
+    img_elem.style.right= width +  "px"; 
+    /*img_elem.style.top = "10px";*/
+    img_elem.style.margin = json.img_margin;
+    img_elem.style.borderRadius = "50%";
+    img_elem.href = json.media + "/" + json.user_url;
+    img_elem.alt = "Go to " + json.user + "&#39;s " + json.media_name + "!";
 
     var img = document.createElement("img");
     img.src = json.photo;
-    link.appendChild(img);
+    img_elem.appendChild(img);
 
-    document.body.appendChild(link);
+    document.body.appendChild(img_elem);
     document.getElementById("img").style.borderRadius = "25px";
   }
 };

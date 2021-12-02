@@ -1,0 +1,15 @@
+{
+  "user": "instagrammer",
+  "profile": "https://instagram.com/instagrammer",
+  "symbol": "@",
+  "name": "Instagrammer",
+  "photo": "https://cdn.glitch.com/35409746-8e4a-406e-ac47-16c4db92cad8%2F10x100profile.jpeg",
+  "img_margin": "0",
+  "display":"instagrammer",
+
+  "links":[
+    {"id":"0","title":"Link_1","url":"/link"},
+    {"id":"1","title":"Link_2","url":"/link"},
+    {"id":"2","title":"Link_3","url":"/link"}
+  ]
+}
