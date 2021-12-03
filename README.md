@@ -1,10 +1,6 @@
 # Welcome to Ulink (Formerly Instalink)!
 
-Ulink is a simple Instagram Bio Link Generator. Instalink is the first (and only) bio link generator that has send-away messages
-
-Send-away messages that are short mesages that your guests will see when they click on a link. An example is
-
-`You are being teleported to` `Where ever they are being teleported to`
+Ulink is a simple Bio Link Generator that uses JSON to create a epic & fast Bio link page! 
 
 # Geting Started
 
@@ -19,12 +15,18 @@ Glitch handles files different. You will have a .html ending of your page if you
 [![forks - instalink](https://img.shields.io/github/forks/benja-media/Ulink?style=social)](https://github.com/Benja-media/Ulink/network/members)
 
 # Adding your links
+Ulink's JSON structure is setup so that it is easy to read! You can change your links mannualy or use Ulink Generator to create the perfect Bio Link generator
 
+### 1. Generator
+Ulink now has a generator for `2.2.0` Try it out:
+
+[Ulink Generator](https://generator.ulink.benja.ml/)
+### 2. Manual
 All options are required unless otherwise stated
 
-Here is an example config.json file
+Here is an example of config.json file
 
-**_Link structure has changed!!! Below is the new verion_**
+**Link structure has changed!!! Below is the new verion**
 
 ```
 {
@@ -56,6 +58,8 @@ Here is an example config.json file
 
 `photo` This is your URL to your avatar! Linking directly to your social media avatar is not supported due to CORS restrictions!
 
+`img_margin` **Depricated** This was a feature that was left from v2.1.6 Change this manualy by visiting the style's stylesheet
+
 **_Recomeded dimensions is 100x100px!_**
 
 ## Links
@@ -81,31 +85,32 @@ List of styles:
       Authour: Benja Media Ltd. (Ulink)
       Built in style | Default style
 
-      Options
-        --
+Options
+
+None
 
 - Legacy
 
       Authour: Benja Media Ltd. (Ulink)
       Built in style
 
-      Options
-        --
+Options
+
+None
 
 - Gradient
 
       Authour: Benja Media Ltd. (Ulink)
       Built in style
 
-      Options
-        /* First Colour */
-        --1: grey;
-        /* Second Colour */
-        --2: green;
-        /* Direction */
-        --Direction: to right;
-        /* Text & Border Colour */
-        --clr: white;
+Options
+| Name          | Root Var     | Default   | Required         |
+| ------------- |--------------| ----------|------------------|
+| Start Colour  | `--1`        | `Red`     |:white_check_mark:|
+| End Colour    | `--2`        | `Yellow`  |:white_check_mark:|
+| Direction     | `--Direction`| `To right`|:white_check_mark:|
+| Text Colour   | `--clr`      | `White`   |:white_check_mark:|
+
 
 How to change styles:
 
