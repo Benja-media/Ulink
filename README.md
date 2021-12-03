@@ -104,13 +104,14 @@ None
       Built in style
 
 Options
-| Name          | Root Var     | Default   | Required         |
-| ------------- |--------------| ----------|------------------|
-| Start Colour  | `--1`        | `Red`     |:white_check_mark:|
-| End Colour    | `--2`        | `Yellow`  |:white_check_mark:|
-| Direction     | `--Direction`| `To right`|:white_check_mark:|
-| Text Colour   | `--clr`      | `White`   |:white_check_mark:|
+| Name          | Root Var     | Default   |Type      |
+| ------------- |--------------| ----------|----------|
+| Start Colour  | `--1`        | `Red`     | Colour   |
+| End Colour    | `--2`        | `Yellow`  | Colour   |
+| Direction     | `--Direction`| `To right`| Direction|
+| Text Colour   | `--clr`      | `White`   | Colour   |
 
+**All Values are required**
 
 How to change styles:
 
