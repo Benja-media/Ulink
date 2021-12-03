@@ -1,6 +1,10 @@
 # Welcome to Ulink (Formerly Instalink)!
 
-Ulink (Formerly InstaLink) is an open source bio link generator. Ulink uses a simple json file to create a fast biolink! Ulink is a Static site generator that provides your links in a clean Bio link
+Ulink is a simple Instagram Bio Link Generator. Instalink is the first (and only) bio link generator that has send-away messages
+
+Send-away messages that are short mesages that your guests will see when they click on a link. An example is
+
+`You are being teleported to` `Where ever they are being teleported to`
 
 # Geting Started
 
