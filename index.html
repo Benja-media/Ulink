@@ -55,7 +55,7 @@
 
     function writeHeader(jsonObj) {
       const myImg = document.createElement('img')
-      myImg.src = "https://cdn.glitch.com/35409746-8e4a-406e-ac47-16c4db92cad8%2F10x100profile.jpeg"; 
+      myImg.src = jsonObj['photo']; 
       header.appendChild(myImg);
 
       const myH1 = document.createElement('a');
