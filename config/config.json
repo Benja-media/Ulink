@@ -8,8 +8,9 @@
   "display":"instagrammer",
 
   "links":[
-    {"id":"0","title":"Link_1","url":"/link"},
-    {"id":"1","title":"Link_2","url":"/link"},
-    {"id":"2","title":"Link_3","url":"/link"}
+    {"id":"0","title":"Ulink Docs","url":"https://ulink.docs.benja.ml/"},
+    {"id":"1","title":"Ulink.json Generator","url":"https://generator.ulink.benja.ml/"},
+    {"id":"2","title":"Github repo","url":"https://github.com/Benja-media/Ulink"},
+    {"id":"3","title":"Ulink demo","url":"https://demo.ulink.benja.ml/"}
   ]
 }
