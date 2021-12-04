@@ -1,0 +1,123 @@
+/* CHANGE LINE 25 IN INDEX.HTML TO  <link rel="stylesheet" href="/styles/image.css" /> TO USE ME */
+
+/* OPTIONS */
+:root {
+  /* Text & Border Colour */
+  --m_clr: #1A4EB4;
+  /* Annimation speed */
+  --tr_spd: 0.3s;
+  /*Image*/
+  --url: url("https://live.staticflickr.com/65535/51711634426_458cef5415_h.jpg")
+}
+
+body {
+  background-image: var(--url);
+  background-position: 50% top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  font-family: "Open Sans", sans-serif;
+  background-color: #cccccc;
+  color: var(--m_clr);
+}
+.h1 {
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 0;
+  margin-bottom: -0.25em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+h1 {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+a {
+  text-align: center;
+}
+
+.link {
+  border-radius: 40px;
+  margin: auto;
+  width: 60%;
+  height: 60%;
+  border: 3px solid var(--m_clr);
+  padding: 8px;
+  margin: auto;
+  margin-bottom: 10px;
+  color: var(--m_clr);
+  transition: var(--tr_spd);
+
+}
+
+.link:hover {
+  background-color: var(--m_clr);
+  color: white;
+}
+a:hover {
+  colour: white
+}
+
+
+.img {
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 3px solid var(--m_clr);
+}
+
+a:link {
+  font-family: "Open Sans", sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+a:visited {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+a:active {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 0;
+  margin-bottom: -0.25em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  color: var(--m_clr);
+
+}
+
+img {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border: 3px solid var(--m_clr);
+}
