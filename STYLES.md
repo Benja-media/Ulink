@@ -56,10 +56,24 @@ To use fonts from google add
 
 and set `:root` vars to:
       
-      /* NOTE I AM QUOTED */
+      /* NOTE THAT --FNT IS QUOTED */
       --fnt: 'FONT FAMILY'
       --fnt_typ: FONT TYPE
-  
+
+## Image
+The style that allows you to add a custom image!
+
+       Authour: Benja Media Ltd. (Ulink)
+       Built in style
+       
+Options
+| Name               | Root Var   | Default               |Type     |
+| -------------------|----------- | ----------------------|---------|
+| Colour             | `--m_clr`  | `#1A4EB4`             | Colour  |
+| Transition speed   | `--tr_spd` | `sans-serif`          | Seconds |
+| Image URL          | `--url`    | `url("styles/bg.jpg")`| URL     |              
+
+**All Values are required**
 ## Legacy 
 The Classic Gradient style
 
