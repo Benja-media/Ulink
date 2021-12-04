@@ -44,6 +44,8 @@ a {text-align: center;}
   padding: 8px;
   margin: auto;
   margin-bottom: 10px;
+  color: var(--clr);
+
 }
 
 .img {
