@@ -1,4 +1,16 @@
 /* CHANGE LINE 25 IN INDEX.HTML TO  <link rel="stylesheet" href="/styles/default.css" /> TO USE ME */
+:root {
+  /*Please use fonts that are compatable with all browsers!*/
+  /* FONT NAME */
+  --fnt: 'Veranda';
+  /* FONT TYPE */
+  --fnt_typ: sans-serif;
+}
+
+
+body  {
+  font-family: var(--fnt), var(--fnt_typ) !important;
+}
 
 .link {
   /* Fallback: Set a background color. */
@@ -70,7 +82,6 @@ img {
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
 .h1 {
-  font-family: 'Outfit', sans-serif;
   font-weight: bold;
   font-size: 2em;
   text-align: center;
@@ -83,7 +94,6 @@ img {
 }
 
 a {
-  font-family: 'Outfit', sans-serif;
   font-weight: bold;
   text-align: center;
   font-size: 2em;
@@ -95,38 +105,29 @@ a {
   cursor: pointer;
 }
 
-p {
-    font-family: 'Outfit', sans-serif;
-
-}
 
 a:link {
   color: black;
-  font-family: "Open Sans", sans-serif;
 }
 
 a:link {
   text-decoration: none;
   color: black;
-  font-family: "Open Sans", sans-serif;
 }
 
 a:visited {
   text-decoration: none;
   color: black;
-  font-family: "Open Sans", sans-serif;
 }
 
 a:hover {
   text-decoration: none;
   color: black;
-  font-family: "Open Sans", sans-serif;
 }
 
 a:active {
   text-decoration: none;
   color: black;
-  font-family: "Open Sans", sans-serif;
 }
 
 body {
