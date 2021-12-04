@@ -76,51 +76,8 @@ Please note that all later versions don't support Arrays
 
 # Styles
 
-I am in the procces of writing styles for Ulink. I will update this file with a list of styles
-
-List of styles:
-
-- Default
-    
-      Authour: Benja Media Ltd. (Ulink)
-      Built in style | Default style
-
-Options
-
-None
-
-- Legacy
-
-      Authour: Benja Media Ltd. (Ulink)
-      Built in style
-
-Options
-
-None
-
-- Gradient
-
-      Authour: Benja Media Ltd. (Ulink)
-      Built in style
-
-Options
-| Name          | Root Var     | Default   |Type      |
-| ------------- |--------------| ----------|----------|
-| Start Colour  | `--1`        | `Red`     | Colour   |
-| End Colour    | `--2`        | `Yellow`  | Colour   |
-| Direction     | `--Direction`| `To right`| Direction|
-| Text Colour   | `--clr`      | `White`   | Colour   |
-
-**All Values are required**
-
-How to change styles:
-
-Go to `index.html:25` Change `styles/default.css` to the name of the style ex:
-
-    <link rel="stylesheet" href="/styles/default.css" />
-Becomes:
-
-    <link rel="stylesheet" href="/styles/legacy.css" />
+Please see 
+[STYLES.MD](../master/STYLES.md)
 
 
 # Extras
