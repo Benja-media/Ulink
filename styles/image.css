@@ -7,7 +7,7 @@
   /* Annimation speed */
   --tr_spd: 0.3s;
   /*Image*/
-  --url: url("https://live.staticflickr.com/65535/51711634426_458cef5415_h.jpg")
+  --url: url("/styles/bg.jpg")
 }
 
 body {
