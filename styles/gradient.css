@@ -9,7 +9,7 @@
   /* Direction */
   --Direction: to right;
   /* Text & Border Colour */
-  --clr: grey;
+  --clr: red;
 }
 
 body {
@@ -58,32 +58,32 @@ a {text-align: center;}
 }
 
 a:link {
-     color: white;
+     color: var(--clr);
      font-family: 'Open Sans', sans-serif;
 
 }
 
 a:link {
     text-decoration: none;
-    color: white;
+    color: var(--clr);
     font-family: 'Open Sans', sans-serif;
 }
 
 a:visited {
     text-decoration: none;
-    color: white;
+    color: var(--clr);
     font-family: 'Open Sans', sans-serif;  
 }
 
 a:hover {
     text-decoration: none;
-    color: white;
+    color: var(--clr);
     font-family: 'Open Sans', sans-serif;
 }
 
 a:active {
     text-decoration: none;
-    color: white;
+    color: var(--clr);
     font-family: 'Open Sans', sans-serif;
 }
 
