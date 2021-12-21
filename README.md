@@ -33,7 +33,6 @@ Here is an example config.json file
   "symbol": "@",
   "name": "Instagrammer",
   "photo": "https://cdn.glitch.com/35409746-8e4a-406e-ac47-16c4db92cad8%2F10x100profile.jpeg",
-  "img_margin": "0",
   "display":"instagrammer",
 
   "links":[
@@ -46,33 +45,72 @@ Here is an example config.json file
 
 ## Options
 
-`user` Is your username.
+| Value   | Discription                           | Defaults to     | Sugested Value |
+|---------|---------------------------------------|-----------------|----------------|
+|`user`   | Username                              | N/A             |                |
+|`profile`| Your primary profile                  | N/A             |                |
+|`symbol` | The symbol in front of your username  | N/A             | @              |
+|`name`   | Your name                             | N/A             |                |
+|`photo`* | Your Profile photo                    | N/A             |                |
+|`display`| The title of your ULINK               | ULINK           |                |
 
-`profile` Is the URL to your chosen profile
+**_ALL VALUES ARE REQUIRED_**
 
-`symbol` is the symbol from your name EX: `@benmmonster`
-
-`name` Is your display name
-
-`photo` This is your URL to your avatar! Linking directly to your social media avatar is not supported due to CORS restrictions!
-
-**_Recomeded dimensions is 100x100px!_**
+* Recomeded dimensions is 100x100px
 
 ## Links
 
 In version 2.2.0 The list of links was moved to a array structure to allow unlimited links!!! 
 
 Please note that all later versions don't support Arrays
+| Value   | Discription          | Defaults to     | 
+|---------|----------------------|-----------------|
+|`id`     | ID of Link           | N/A             |                
+|`title`  | Display of link      | Hidden          |
+|`url`    | Destination of link  | Hidden          |
 
-`id` Is a number `0 - ∞` That gives an ID to the element. This value is required
+**_ALL VALUES ARE REQUIRED_**
 
-`title` Is the display to your link
+# Icons
+**NEW!** You can now add icons to your project with links to other social media accounts!
+The Icons in this project make use of Font Awesome Icons!
 
-`url` Is the destination
+The icon file is found at `/config/icons.json`
+
+Adding Icons:
+```
+{
+  "size": "fa-2x",
+  "space": "fa-fw",
+  "color":"#1A4EB4",
+  "icons": [
+    {
+      "fa": "fas fa-pencil-ruler",
+      "url": "/config/icon.json"
+    },
+    {
+      "fa": "fas fa-icons",
+      "url": "/config/icon.json"
+    }
+  ]
+}
+```
+Options:
+
+| Value  | Discription                | Defaults to     | Sugested Value |
+|--------|----------------------------|-----------------|----------------|
+|`size`  | The size for the Icon      | None            | `fa-2x`        |
+|`space` | The space for the spacing  | None            | `fa-fw`        |
+|`color` | The color of the icon      | CSS Body `color`|                |
+
+Icons:
+| Value  | Discription                | Defaults to     | Sugested Value |
+|--------|----------------------------|-----------------|----------------|
+|`fa`    | Unicode / Icon class       | Hidden (none)   | `fa-2x`        |
+|`url`   | The destination of the Icon| Undefined       | `fa-fw`        |
 
 # Styles
 
-I am in the procces of writing styles for Ulink. I will update this file with a list of styles
 
 List of styles:
 
@@ -81,41 +119,44 @@ List of styles:
       Authour: Benja Media Ltd. (Ulink)
       Built in style | Default style
 
-      Options
-        --
+      Option prefix
+        N/A
 
 - Legacy
 
       Authour: Benja Media Ltd. (Ulink)
       Built in style
 
-      Options
-        --
+      Option prefix
+        N/A
 
 - Gradient
 
       Authour: Benja Media Ltd. (Ulink)
       Built in style
 
-      Options
-        /* First Colour */
-        --1: grey;
-        /* Second Colour */
-        --2: green;
-        /* Direction */
-        --Direction: to right;
-        /* Text & Border Colour */
-        --clr: white;
+      Option prefix
+        gdr_
+        
+- Image
+
+      Authour: Benja Media Ltd. (Ulink)
+      Built in style
+
+      Option prefix
+        img_
+           
+Styles now have options built into them. Find the options at `/config/style.json`
+
 
 How to change styles:
 
-Go to `index.html:25` Change `styles/default.css` to the name of the style ex:
+Go to `index.html` Change `styles/default.css` to the name of the style ex:
 
     <link rel="stylesheet" href="/styles/default.css" />
 Becomes:
 
     <link rel="stylesheet" href="/styles/legacy.css" />
-
 
 # Extras
 
