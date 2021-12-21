@@ -1,4 +1,3 @@
-/* CHANGE LINE 25 IN INDEX.HTML TO  <link rel="stylesheet" href="/styles/default.css" /> TO USE ME */
 :root {
   /*Please use fonts that are compatable with all browsers!*/
   /* FONT NAME */
@@ -11,6 +10,8 @@
 body  {
   font-family: var(--fnt), var(--fnt_typ) !important;
 }
+
+/* CHANGE LINE 25 IN INDEX.HTML TO  <link rel="stylesheet" href="/styles/default.css" /> TO USE ME */
 
 .link {
   /* Fallback: Set a background color. */
@@ -79,7 +80,6 @@ img {
   margin-right: auto;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
 .h1 {
   font-weight: bold;
@@ -105,6 +105,9 @@ a {
   cursor: pointer;
 }
 
+p {
+
+}
 
 a:link {
   color: black;

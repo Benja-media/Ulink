@@ -1,0 +1,15 @@
+{
+  "size": "fa-2x",
+  "space": "fa-fw",
+  "color":"#1A4EB4",
+  "icons": [
+    {
+      "fa": "fas fa-pencil-ruler",
+      "url": "/config/icon.json"
+    },
+    {
+      "fa": "fas fa-icons",
+      "url": "/config/icon.json"
+    }
+  ]
+}

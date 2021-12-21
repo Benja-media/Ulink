@@ -1,16 +1,19 @@
 {
-  "user": "instagrammer",
-  "profile": "https://instagram.com/instagrammer",
+  "user": "benmmonster",
+  "profile": "https://instagram.com/benmmonster",
   "symbol": "@",
-  "name": "Instagrammer",
+  "name": "Ben M",
   "photo": "https://cdn.glitch.com/35409746-8e4a-406e-ac47-16c4db92cad8%2F10x100profile.jpeg",
   "img_margin": "0",
-  "display":"instagrammer",
-
+  "display":"Ben M",
+  
   "links":[
-    {"id":"0","title":"Ulink Docs","url":"https://ulink.docs.benja.ml/"},
-    {"id":"1","title":"Ulink.json Generator","url":"https://generator.ulink.benja.ml/"},
-    {"id":"2","title":"Github repo","url":"https://github.com/Benja-media/Ulink"},
-    {"id":"3","title":"Ulink demo","url":"https://demo.ulink.benja.ml/"}
+    {"id":"0","title":"Youtube","url":"https://youtube.com/channel/UC8g9QqWZYtgfKvuzs22TNqw"},
+    {"id":"1","title":"Instagram","url":"https://Instagram.com/benmmonster"},
+    {"id":"2","title":"Flickr","url":"https://www.flickr.com/photos/benmmonster/"},
+    {"id":"3","title":"Github","url":"https://github.com/benjamin-del/"},
+    {"id":"3","title":"Benja Media","url":"https://github.com/Benja-media"},
+    {"id":"3","title":"Thingiverse","url":"hhttps://www.thingiverse.com/benjm/designs"}
+
   ]
 }
