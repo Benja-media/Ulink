@@ -1,23 +1,25 @@
-/* CHANGE LINE 25 IN INDEX.HTML TO  <link rel="stylesheet" href="/styles/image.css" /> TO USE ME */
+/* CHANGE LINE 25 IN INDEX.HTML TO  <link rel="stylesheet" href="/styles/gradient.css" /> TO USE ME */
 
 /* OPTIONS */
 :root {
   /* Text & Border Colour */
-  --m_clr: #1A4EB4;
+  --color: #1A4EB4;
   /* Annimation speed */
-  --tr_spd: 0.3s;
+  --speed: 0.3s;
   /*Image*/
-  --url: url("/styles/bg.jpg")
+  --image: url("https://live.staticflickr.com/65535/51711634426_458cef5415_h.jpg");
+  /* 2nd Color */
+  --hover_color: white
 }
 
 body {
-  background-image: var(--url);
+  background-image: var(--image);
   background-position: 50% top;
   background-repeat: no-repeat;
   background-attachment: scroll;
   font-family: "Open Sans", sans-serif;
   background-color: #cccccc;
-  color: var(--m_clr);
+  color: var(--color);
 }
 .h1 {
   font-weight: bold;
@@ -48,21 +50,21 @@ a {
   margin: auto;
   width: 60%;
   height: 60%;
-  border: 3px solid var(--m_clr);
+  border: 3px solid var(--color);
   padding: 8px;
   margin: auto;
   margin-bottom: 10px;
-  color: var(--m_clr);
-  transition: var(--tr_spd);
+  color: var(--color);
+  transition: var(--speed);
 
 }
 
 .link:hover {
-  background-color: var(--m_clr);
-  color: white;
+  background-color: var(--color);
+  color: var(--hover_color);
 }
 a:hover {
-  colour: white
+  color: var(--2color)
 }
 
 
@@ -72,7 +74,7 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  border: 3px solid var(--m_clr);
+  border: 3px solid var(--color);
 }
 
 a:link {
@@ -109,7 +111,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
-  color: var(--m_clr);
+  color: var(--color);
 
 }
 
@@ -119,5 +121,5 @@ img {
   margin-left: auto;
   margin-right: auto;
   border-style: solid;
-  border: 3px solid var(--m_clr);
+  border: 3px solid var(--color);
 }

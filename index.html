@@ -8,13 +8,11 @@
         if (this.readyState == 4 && this.status == 200) {
           var Link = JSON.parse(this.responseText);
           // Please do not remove this! This is part of the atribution required!
-            document.title = Link.display + " |   Ulink";
-
+          document.title = Link.display + " |   Ulink";
         }
       };
       xmlhttp.open("GET", "/config/config.json", true);
       xmlhttp.send();
-            
     </script>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -22,78 +20,26 @@
     <script src="/js/bio.js"></script>
     <link rel="shortcut icon" href="/styles/logo.png" />
     <!-- Style selector -->
-    <link rel="stylesheet" href="/styles/gradient.css" />
+    <link rel="stylesheet" href="/styles/image.css" />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
+    <header></header>
+    <center id="social">
 
-      <header>
-    <!--  <div id="imgwpr" class="imgwpr">
-        <div id="img" style="border-radius: 25px;"></div>
-      </div>-->
-      </header>
+    </center>
+    <section></section>
 
-      <section>
-
-      </section>
-
-   <script>
-     const header = document.querySelector('header');
-    const section = document.querySelector('section');
-
-    let requestURL = '/config/config.json';
-    let request = new XMLHttpRequest();
-    request.open('GET', requestURL);
-    request.responseType = 'text';
-    request.send();
-
-    request.onload = function() {
-      const js_res = request.response;
-      const js_par = JSON.parse(js_res);
-      writeHeader(js_par);
-      js_obj(js_par);
-    }
-
-    function writeHeader(jsonObj) {
-      const myImg = document.createElement('img')
-      myImg.src = jsonObj['photo']; 
-      header.appendChild(myImg);
-
-      const myH1 = document.createElement('a');
-      myH1.textContent = jsonObj['name'];
-      myH1.setAttribute('href', jsonObj['profile']);
-      myH1.setAttribute('class', "h1");
-      myH1.setAttribute("id", "h1");
-      header.appendChild(myH1);
-
-      const p = document.createElement('p');
-      p.textContent = jsonObj['symbol'] + jsonObj['user'];
-      header.appendChild(p);
-    }
-
-    function js_obj(jsonObj) {
-      const links = jsonObj['links'];
-
-      for(let i = 0; i < links.length; i++) {
-        const list = document.createElement('link_list');
-        const h2 = document.createElement('h2');
-        const link = document.createElement('a');
-        const url = document.createElement('p');
-        const myList = document.createElement('ul');
-
-        h2.textContent = links[i].name;
-        link.textContent = links[i].title;
-        link.setAttribute('href', links[i].url);
-        link.setAttribute('class', "link");
-        link.setAttribute("id", links[i].id + "-title");
-
-        list.appendChild(h2);
-        list.appendChild(link);
-        list.appendChild(url);
-        list.appendChild(myList);
-
-        section.appendChild(list);
-      }
-    }
-    </script>
     <p id="Atrubution" class="atr"></p>
+    <script src="/js/icons.js"></script>
+    <script src="/js/link.js"></script>
+    <script src="/js/style.js"></script>
+  </body>
 </html>
