@@ -1,10 +1,6 @@
 # Welcome to Ulink (Formerly Instalink)!
 
-Ulink is a simple Instagram Bio Link Generator. Instalink is the first (and only) bio link generator that has send-away messages
-
-Send-away messages that are short mesages that your guests will see when they click on a link. An example is
-
-`You are being teleported to` `Where ever they are being teleported to`
+Ulink is a simple Bio Link Generator for every social media! Ulink uses JSON to create a epic Bio Link!
 
 # Geting Started
 
@@ -13,8 +9,6 @@ Fist you will need to deploy Ulink to a host. Here are some quick start buttons:
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Benja-media/Ulink)
 
 [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/benja-media/Ulink)
-
-Glitch handles files different. You will have a .html ending of your page if you do not use index!
 
 [![forks - instalink](https://img.shields.io/github/forks/benja-media/Ulink?style=social)](https://github.com/Benja-media/Ulink/network/members)
 
@@ -33,7 +27,6 @@ Here is an example config.json file
   "symbol": "@",
   "name": "Instagrammer",
   "photo": "https://cdn.glitch.com/35409746-8e4a-406e-ac47-16c4db92cad8%2F10x100profile.jpeg",
-  "img_margin": "0",
   "display":"instagrammer",
 
   "links":[
@@ -60,7 +53,7 @@ Here is an example config.json file
 
 ## Links
 
-In version 2.2.0 The list of links was moved to a array structure to allow unlimited links!!! 
+In version 2.2.0 The list of links was moved to a array structure to allow unlimited links!
 
 Please note that all later versions don't support Arrays
 
@@ -71,51 +64,18 @@ Please note that all later versions don't support Arrays
 `url` Is the destination
 
 # Styles
+Style docs:
 
-I am in the procces of writing styles for Ulink. I will update this file with a list of styles
+[styles/styles.md](https://github.com/Benja-media/Ulink/blob/main/styles/styles.css)
 
-List of styles:
+# Icons
+Ulink now supports Icons from Font Awesome!
 
-- Default
-    
-      Authour: Benja Media Ltd. (Ulink)
-      Built in style | Default style
+The icon config file is found at `/config/icon.json`
 
-      Options
-        --
+## Add Icons
 
-- Legacy
-
-      Authour: Benja Media Ltd. (Ulink)
-      Built in style
-
-      Options
-        --
-
-- Gradient
-
-      Authour: Benja Media Ltd. (Ulink)
-      Built in style
-
-      Options
-        /* First Colour */
-        --1: grey;
-        /* Second Colour */
-        --2: green;
-        /* Direction */
-        --Direction: to right;
-        /* Text & Border Colour */
-        --clr: white;
-
-How to change styles:
-
-Go to `index.html:25` Change `styles/default.css` to the name of the style ex:
-
-    <link rel="stylesheet" href="/styles/default.css" />
-Becomes:
-
-    <link rel="stylesheet" href="/styles/legacy.css" />
-
+Comming soon!
 
 # Extras
 
