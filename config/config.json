@@ -1,19 +1,14 @@
 {
-  "user": "benmmonster",
+  "user": "instagramer",
   "profile": "https://instagram.com/benmmonster",
   "symbol": "@",
-  "name": "Ben M",
+  "name": "Proud Ulink User",
   "photo": "https://cdn.glitch.com/35409746-8e4a-406e-ac47-16c4db92cad8%2F10x100profile.jpeg",
   "img_margin": "0",
-  "display":"Ben M",
+  "display":"Proud Ulink User",
   
   "links":[
-    {"id":"0","title":"Youtube","url":"https://youtube.com/channel/UC8g9QqWZYtgfKvuzs22TNqw"},
-    {"id":"1","title":"Instagram","url":"https://Instagram.com/benmmonster"},
-    {"id":"2","title":"Flickr","url":"https://www.flickr.com/photos/benmmonster/"},
-    {"id":"3","title":"Github","url":"https://github.com/benjamin-del/"},
-    {"id":"3","title":"Benja Media","url":"https://github.com/Benja-media"},
-    {"id":"3","title":"Thingiverse","url":"hhttps://www.thingiverse.com/benjm/designs"}
-
+    {"id":"0","title":"LINK 1!","url":"https://example.com"},
+    {"id":"2","title":"LINK 2","url":"https://example.com"}
   ]
 }
