@@ -2,20 +2,23 @@
 
 /* OPTIONS */
 :root {
-  /* First Colour */
   --1: red;
-  /* Second Colour */
   --2: yellow;
-  /* Direction */
   --Direction: to right;
-  /* Text & Border Colour */
   --clr: white;
+/* Font */  
+  --fontname: "Roboto"
+  --fontfamily: sans-serif;  
+/* root vars */
+  --font-size: 1em
+  --width: 100%
+
 }
 
 body {
 
 background-image: linear-gradient(var(--Direction), var(--1) , var(--2));
-font-family: 'Open Sans', sans-serif;
+font-family: var(--fontname), var(--fontfamily);
 color: var(--clr)
 }
 .h1 {
@@ -38,8 +41,7 @@ a {text-align: center;}
 .link {
   border-radius: 40px;
   margin: auto;
-  width: 60%;
-  height: 60%;
+  width: var(--width);
   border: 3px solid var(--clr);
   padding: 8px;
   margin: auto;
@@ -88,7 +90,7 @@ a:active {
 a {
   font-weight: bold;
   text-align: center;
-  font-size: 1em;
+  font-size: var(--font_size);
   margin-bottom: 0;
   margin-bottom: -0.25em;
   display: block;

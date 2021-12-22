@@ -2,23 +2,26 @@
 
 /* OPTIONS */
 :root {
-  /* Text & Border Colour */
   --color: #1A4EB4;
-  /* Annimation speed */
   --speed: 0.3s;
-  /*Image*/
-  --image: url("https://live.staticflickr.com/65535/51711634426_458cef5415_h.jpg");
-  /* 2nd Color */
-  --hover_color: white
+  --image: 
+  --hover_color: white; 
+/* Font */  
+  --fontname: "Roboto"
+  --fontfamily: sans-serif;
+/* Root Vars */
+  --font-size: 1em;
+  --width: 100%;
 }
+
 
 body {
   background-image: var(--image);
   background-position: 50% top;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  font-family: "Open Sans", sans-serif;
-  background-color: #cccccc;
+  font-family: var(--fontname), var(--fontfamily);
+  background-color: #3BAD67;
   color: var(--color);
 }
 .h1 {
@@ -48,8 +51,7 @@ a {
 .link {
   border-radius: 40px;
   margin: auto;
-  width: 60%;
-  height: 60%;
+  width: var(--width);
   border: 3px solid var(--color);
   padding: 8px;
   margin: auto;
@@ -78,33 +80,26 @@ a:hover {
 }
 
 a:link {
-  font-family: "Open Sans", sans-serif;
-}
-
-a:link {
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
 }
 
 a:visited {
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
 }
 
 a:hover {
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
 }
 
 a:active {
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
 }
 
 a {
   font-weight: bold;
   text-align: center;
-  font-size: 1em;
+  font-size: var(--font_size);
+  font-family: var(--fontname), var(--fontfamily);
   margin-bottom: 0;
   margin-bottom: -0.25em;
   display: block;
