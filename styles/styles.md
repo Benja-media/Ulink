@@ -69,10 +69,9 @@ This option is for the image style (`/style/image.css`)
 
 | JSON       | Discription                        |
 |------------|------------------------------------|
-|`icon`      | Icon color                         |
 |`main_color`| Main color                         |
 |`speed`     | Speed of transition                |
-|`image`	   | The URL to your image              |  
+|`image`	   | The URL to your image            |  
 |`hovercolor`| The color of the link when hovered |
 
 ### GDR_ Prefix
@@ -83,7 +82,7 @@ This option is for the graident style.
 |`1`         | 1st color of gradient              |
 |`2`         | 2nd color of gradient              |
 |`direction` | Direction of gradient              |
-|`color`	   | Color of links                     |  
+|`color`	   | Color of links                   |  
 
 ## Change styles:
 
