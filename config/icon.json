@@ -4,24 +4,16 @@
   "color":"#1A4EB4",
   "icons": [
     {
-      "fa": "fab fa-github-square",
-      "url": "https://github.com/Benja-media"
+      "fa": "fas fa-pen",
+      "url": "/config/icon.json"
     },
     {
-      "fa": "fab fa-youtube-square",
+      "fa": "fas fa-icons",
       "url": "https://youtube.com/channel/UC8g9QqWZYtgfKvuzs22TNqw"
     },
     {
-      "fa": "fab fa-flickr",
-      "url": "https://www.flickr.com/people/benmmonster/"
-    },
-    {
-      "fa": "fas fa-cube",
-      "url": "https://www.thingiverse.com/benjm/"
-    },    
-    {
-      "fa": "fab fa-instagram",
-      "url": "https://instagram.com/benmmonster"
+      "fa": "fab fa-github",
+      "url": "https://github.com/Benja-media/Ulink"
     }
   ]
 }
