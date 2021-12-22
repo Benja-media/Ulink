@@ -73,9 +73,50 @@ Ulink now supports Icons from Font Awesome!
 
 The icon config file is found at `/config/icon.json`
 
-## Add Icons
+## Configure Icons
 
-Comming soon!
+```
+{
+  "size": "fa-2x",
+  "space": "fa-fw",
+  "color":"#1A4EB4",
+  "icons": [
+    {
+      "fa": "fab fa-github-square",
+      "url": "https://github.com/Benja-media"
+    },
+    {
+      "fa": "fab fa-youtube-square",
+      "url": "https://youtube.com/channel/UC8g9QqWZYtgfKvuzs22TNqw"
+    },
+    {
+      "fa": "fab fa-flickr",
+      "url": "https://www.flickr.com/people/benmmonster/"
+    },
+    {
+      "fa": "fas fa-cube",
+      "url": "https://www.thingiverse.com/benjm/"
+    },    
+    {
+      "fa": "fab fa-instagram",
+      "url": "https://instagram.com/benmmonster"
+    }
+  ]
+}
+```
+
+Options:
+`size` The size of the Icon. Reccomended Value is `fa-2x`
+
+`space` The spacing between Icons. Reccomended Value is `fa-fw`
+
+`color` The color of the Icon.
+
+Icons:
+
+`fa` The Font awesome Icon! (The `fa` is required)
+
+`url` Where the icon brings users to
 
 # Extras
 
