@@ -1,14 +1,15 @@
 :root {
-  /*Please use fonts that are compatable with all browsers!*/
-  /* FONT NAME */
-  --fnt: 'Veranda';
-  /* FONT TYPE */
-  --fnt_typ: sans-serif;
+/* Font */  
+  --fontname: "Roboto"
+  --fontfamily: sans-serif;
+/* Root vars */
+  --font-size: 1em
+  --width: 100%
 }
 
 
 body  {
-  font-family: var(--fnt), var(--fnt_typ) !important;
+  font-family: var(--fontname), var(--fontfamily);
 }
 
 /* CHANGE LINE 25 IN INDEX.HTML TO  <link rel="stylesheet" href="/styles/default.css" /> TO USE ME */
@@ -96,7 +97,7 @@ img {
 a {
   font-weight: bold;
   text-align: center;
-  font-size: 2em;
+  font-size: var(--font_size);
   margin-bottom: 0;
   margin-bottom: -0.25em;
   display: block;

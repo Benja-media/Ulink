@@ -1,11 +1,17 @@
 /* CHANGE LINE 25 IN INDEX.HTML TO  <link rel="stylesheet" href="/styles/legacy.css" /> TO USE ME */
-
+:root {
+  --font-size: 1em;
+  --width: 100%;
+  /* Font */  
+  --fontname: "Roboto"
+  --fontfamily: sans-serif;
+} 
 
 body {
   background: rgb(131,58,180);
   background: linear-gradient(225deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);;
   background-attachment: fixed;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--fontname), var(--fontfamily);
 
 }
 h2 {text-align: center;}
@@ -28,8 +34,7 @@ a {text-align: center;}[]
 .link {
   border-radius: 40px;
   margin: auto;
-  width: 60%;
-  height: 60%;
+  width: var(--width);
   border: 3px solid #ffffff;
   padding: 8px;
   margin: auto;
@@ -47,44 +52,38 @@ a {text-align: center;}[]
 
 body {
   color: white;
-  font-family: 'Open Sans', sans-serif;
 
 }
 
 a:link {
      color: white;
-     font-family: 'Open Sans', sans-serif;
 
 }
 
 a:link {
     text-decoration: none;
     color: white;
-    font-family: 'Open Sans', sans-serif;
 }
 
 a:visited {
     text-decoration: none;
     color: white;
-    font-family: 'Open Sans', sans-serif;  
 }
 
 a:hover {
     text-decoration: none;
     color: white;
-    font-family: 'Open Sans', sans-serif;
 }
 
 a:active {
     text-decoration: none;
     color: white;
-    font-family: 'Open Sans', sans-serif;
 }
 
 a {
   font-weight: bold;
   text-align: center;
-  font-size: 1em;
+  font-size: var(--font-size);
   margin-bottom: 0;
   margin-bottom: -0.25em;
   display: block;
