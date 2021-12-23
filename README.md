@@ -12,6 +12,9 @@ Fist you will need to deploy Ulink to a host. Here are some quick start buttons:
 
 [![forks - instalink](https://img.shields.io/github/forks/benja-media/Ulink?style=social)](https://github.com/Benja-media/Ulink/network/members)
 
+[Deploy to repl.it*](https://replit.com/@Benmmonster/Ulink?v=1)
+
+To deploy to replit use deploy command `ulink`
 # Adding your links
 
 All options are required unless otherwise stated
