@@ -2,19 +2,19 @@
 
 Ulink is a simple Bio Link Generator for every social media! Ulink uses JSON to create a epic Bio Link!
 
-# Geting Started
+# Geting started
 
-First you will need to deploy Ulink to a host. Here are some quick start buttons:
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Benja-media/Ulink)
-
-[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/benja-media/Ulink)
-
-[![forks - instalink](https://img.shields.io/github/forks/benja-media/Ulink?style=social)](https://github.com/Benja-media/Ulink/network/members)
-
-[Deploy to repl.it*](https://replit.com/@Benmmonster/Ulink?v=1)
+| Host             | Result             | Link                                                                                                                           
+|------------------|--------------------|-----------------------------------------------------------------------------------------------------------------|
+| Replit           | :white_check_mark: | [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Benja-media/Ulink) |
+| Glitch           | :white_check_mark: | [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/benja-media/Ulink) |
+| Cloudflare Pages | :white_check_mark: |   |
+| Vercel           | :white_check_mark: | [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FBenja-media%2FUlink)|
+| Heroku           | :x:                | |
+| Github pages     | :white_check_mark: | [![forks - instalink](https://img.shields.io/github/forks/benja-media/Ulink?style=social)](https://github.com/Benjamedia/Ulink/network/members)|
 
 To deploy to replit use deploy command `ulink`
+
 # Adding your links
 
 All options are required unless otherwise stated
