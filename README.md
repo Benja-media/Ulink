@@ -4,7 +4,7 @@ Ulink is a simple Bio Link Generator for every social media! Ulink uses JSON to 
 
 # Geting Started
 
-Fist you will need to deploy Ulink to a host. Here are some quick start buttons:
+First you will need to deploy Ulink to a host. Here are some quick start buttons:
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Benja-media/Ulink)
 
