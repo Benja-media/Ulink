@@ -7,7 +7,7 @@ xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     var json_res = JSON.parse(this.responseText);
     /* Please leave me!*/
-    document.getElementById("Atrubution").innerHTML =
+    document.getElementById("Attribution").innerHTML =
      "This page was made with ❤️ by Benja Media and " + json_res.name;
     document.title = json_res.display + " |   Ulink";
 
