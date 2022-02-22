@@ -39,21 +39,14 @@ xmlhttp.onreadystatechange = function() {
 
       for (let i = 0; i < links.length; i++) {
         const list = document.createElement("div");
-        const h2 = document.createElement("h2");
         const link = document.createElement("a");
-        const url = document.createElement("p");
-        const myList = document.createElement("ul");
 
-        h2.textContent = links[i].name;
         link.textContent = links[i].title;
         link.setAttribute("href", links[i].url);
         link.setAttribute("class", "link");
         link.setAttribute("id", links[i].id + "-title");
 
-        list.appendChild(h2);
         list.appendChild(link);
-        list.appendChild(url);
-        list.appendChild(myList);
 
         section.appendChild(list);
       }
