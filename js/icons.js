@@ -25,5 +25,5 @@ xmlhttp.onreadystatechange = function() {
     }
   }
 };
-xmlhttp.open("GET", "/config/icon.json", true);
+xmlhttp.open("GET", "config/icon.json", true);
 xmlhttp.send();

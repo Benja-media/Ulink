@@ -53,5 +53,5 @@ xmlhttp.onreadystatechange = function() {
     }
   }
 };
-xmlhttp.open("GET", "/config/config.json", true);
+xmlhttp.open("GET", "config/config.json", true);
 xmlhttp.send();
