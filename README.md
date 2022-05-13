@@ -32,7 +32,7 @@ Here is an example config.json file
   "photo": "https://cdn.glitch.com/35409746-8e4a-406e-ac47-16c4db92cad8%2F10x100profile.jpeg",
   "display":"instagrammer",
 
-  "links":[
+  "body":[
     {"id":"1","title":"Link_1","url":"/link"},
     {"id":"2","title":"Link_2","url":"/link"},
     {"id":"3","title":"Link_3","url":"/link"}
