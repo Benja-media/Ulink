@@ -93,11 +93,20 @@ a {
 }
 
 
-img {
+.prf-img {
   border-radius: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   border-style: solid;
   border: 3px solid #fffff;
+}
+img.list-img {
+	width: var(--width);
+	margin-left: auto;
+  margin-right: auto;
+	display: block;
+	border-radius: 40px;
+	margin-bottom: 20px;
+	margin-top: 10px;
 }

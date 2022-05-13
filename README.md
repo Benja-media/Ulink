@@ -1,4 +1,4 @@
-# Welcome to Ulink (Formerly Instalink)!
+# ULINK - OS BIO LINK
 
 Ulink is a simple Bio Link Generator for every social media! Ulink uses JSON to create a epic Bio Link!
 
@@ -67,19 +67,17 @@ Please note that all later versions don't support Arrays
 `url` Is the destination
 
 # Styles
-Style docs:
 
-[styles/styles.md](https://github.com/Benja-media/Ulink/blob/main/styles/styles.css)
+The style read.me is located at `/styles/styles.md`
 
 # Icons
 Ulink now supports Icons from Font Awesome!
 
-The icon config file is found at `/config/icon.json`
-
-## Configure Icons
+The icon config file is found in `/config/config.json`
+## Example Icon set
 
 ```
-{
+"icons":{
   "size": "fa-2x",
   "space": "fa-fw",
   "color":"#1A4EB4",

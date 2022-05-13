@@ -44,6 +44,7 @@ body  {
 .link:hover{
     animation: rainbow-text-simple-animation 0.5s ease-in forwards;
 }
+h2 {text-align: center;}
 
 
 /* Animation shown when entering the page and after the hover animation. */
@@ -74,11 +75,20 @@ body  {
   
 
 
-img {
+.prf-img {
   border-radius: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+img.list-img {
+	width: var(--width);
+	margin-left: auto;
+  margin-right: auto;
+	display: block;
+	border-radius: 40px;
+	margin-bottom: 20px;
 }
 
 

@@ -19,6 +19,7 @@ xmlhttp.onreadystatechange = function() {
     function head() {
       const profile = document.createElement("img");
       profile.src = json_res.photo;
+			profile.setAttribute("class","prf-img")
       header.appendChild(profile);
 
       const user = document.createElement("a");
@@ -34,24 +35,51 @@ xmlhttp.onreadystatechange = function() {
     }
     /* Write links */
     function links() {
-      const links = json_res.links;
+      const links = json_res.body;
       console.log("Found " + links.length + " Links");
 
       for (let i = 0; i < links.length; i++) {
-        const list = document.createElement("div");
-        const link = document.createElement("a");
+				if (links[i].type === "link") {
+  	      const list = document.createElement("div");
+  	      const link = document.createElement("a");
+	
+   	     link.textContent = links[i].title;
+   	     link.setAttribute("href", links[i].url);
+   	     link.setAttribute("class", "link");
+   	     link.setAttribute("id", i + "-title");
 
-        link.textContent = links[i].title;
-        link.setAttribute("href", links[i].url);
-        link.setAttribute("class", "link");
-        link.setAttribute("id", links[i].id + "-title");
+        	list.appendChild(link);
 
-        list.appendChild(link);
-
-        section.appendChild(list);
-      }
-    }
-  }
+        	section.appendChild(list);
+      	} else if (links[i].type === "title") {
+					const list = document.createElement("div")
+					const title = document.createElement("h2")
+					
+					title.textContent = links[i].title
+					
+					list.appendChild(title)
+					section.appendChild(list);
+				} else if (links[i].type === "image") {
+					if (links[i].url === undefined || links[i].url === "none") {
+						var list = document.createElement("div")
+					} else {
+						var list = document.createElement("a")
+						list.setAttribute("href",links[i].url)
+					}
+					list.setAttribute("class","list-img-div")
+					const img = document.createElement("img")
+					
+					img.src = links[i].src
+					img.setAttribute("class","list-img")
+					
+					list.appendChild(img)
+					section.appendChild(list);
+				} else {
+					console.log("Unknown type: " + links[i].type)
+				}
+    	}
+ 	 	}
+	}
 };
 xmlhttp.open("GET", "config/config.json", true);
 xmlhttp.send();

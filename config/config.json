@@ -7,8 +7,30 @@
   "img_margin": "0",
   "display":"Proud Ulink User",
   
-  "links":[
-    {"id":"0","title":"LINK 1!","url":"https://example.com"},
-    {"id":"2","title":"LINK 2","url":"https://example.com"}
-  ]
+  "body":[
+    {"type":"link", "title":"LINK 1!","url":"https://example.com"},
+		{"type":"title","title":"TITLE"},
+    {"type":"link", "title":"LINK 2","url":"https://example.com"},
+		{"type":"image", "src":"https://live.staticflickr.com/65535/52052394106_a32cca4a1e_b.jpg","url":"none"},
+		{"type":"image", "src":"https://live.staticflickr.com/65535/52052394106_a32cca4a1e_b.jpg","url":"https://example.com"}
+  ],
+	"icon": {
+  	"size": "fa-2x",
+  	"space": "fa-fw",
+  	"color":"#1A4EB4",
+  	"icons": [
+    	{
+      	"fa": "fas fa-pen",
+      	"url": "/config/icon.json"
+    	},
+    	{
+      	"fa": "fas fa-icons",
+      	"url": "/config/icon.json"
+    	},
+    	{
+      	"fa": "fab fa-github",
+      	"url": "https://github.com/Benja-media/Ulink"
+    	}
+  	]
+	}
 }
