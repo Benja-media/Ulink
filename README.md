@@ -54,21 +54,54 @@ Here is an example config.json file
 
 **_Recomeded dimensions is 100x100px!_**
 
-## Links
+## Types
+Ulink now has widgets! The supported types are 
 
-In version 2.2.0 The list of links was moved to a array structure to allow unlimited links!
+`links` `title` `image`
 
-Please note that all later versions don't support Arrays
+Type can be set for each element! EX: 
+```   
+{"type":"link", "title":"LINK 1!","url":"https://example.com"}
+```
+Values are case sensitive!
+### Type: Link
 
-`id` Is a number `0 - ∞` That gives an ID to the element. This value is required
+Options: 
 
 `title` Is the display to your link
 
 `url` Is the destination
 
+EX:
+```   
+{"type":"link", "title":"LINK 1!","url":"https://example.com"}
+```
+### Type: Image
+
+Options:
+
+`src` The image to display
+
+`url` A link were the image links to: if you do not wish to have the image as a link, use the value `none`
+
+EX:
+```
+{"type":"image", "src":"https://live.staticflickr.com/65535/52052394106_a32cca4a1e_b.jpg","url":"none"},
+```
+### Type: Title
+
+Options:
+
+`title` The display of the title
+
+EX:
+```
+{"type":"title","title":"TITLE"},
+```
+
 # Styles
 
-The style read.me is located at `/styles/styles.md`
+The style readme is located at `/styles/styles.md`
 
 # Icons
 Ulink now supports Icons from Font Awesome!
