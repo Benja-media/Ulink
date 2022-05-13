@@ -1,4 +1,4 @@
-let styleURL = "/config/style.json";
+let styleURL = "config/style.json";
 let style = new XMLHttpRequest();
 style.open("GET", styleURL);
 style.responseType = "text";
